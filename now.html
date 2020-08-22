@@ -1,0 +1,4002 @@
+<script>window.location.href="https://www.farfaraway.co/daily-horoscope-calculator"</script><!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="https://www.farfaraway.co/img/favicon.png" type="img/favicon-icon"/>
+<link rel="shortcut icon" href="https://www.farfaraway.co/img/favicon.png" type="img/x-icon"/>
+<style>.intro { height:100% !important; }
+#intro_bg { height:100% !important; }
+.intro-body { display:block !important; }
+
+#top_type { display:none; }
+</style>
+<style>.set { height:0px; }
+#errorm > span {
+    width: 100%;
+}
+</style>
+<link rel="icon" href="favicon.ico-v=2.html" type="image/x-icon" />
+<meta charset="utf-8">
+<meta https-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A daily horoscope calculator: find horoscope for today and weekly, monthly horoscopes by your date of birth based on vedic astrology">
+<meta name="author" content="Gaurav Midha">
+<meta property="og:image" content="https://www.farfaraway.co/img/cover.jpg" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/stepsForm.js"></script>
+<title>Farfaraway | today's horoscope based on vedic astrology</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88230270-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Bootstrap Core CSS -->
+<link href="css/now20.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/grayscale.css" rel="stylesheet">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+<link href="css/component.css" rel="stylesheet">
+<link href="css/demo.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+
+<link href="css/bootstrap-datetimepicker-standalone.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+  
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>td { color: #fff; font-family: courier_newregular; font-size: 12px; }
+body {  background: #303034 none repeat scroll 0 0;
+}
+.outerpart {  background: #303034 none repeat scroll 0 0 !important;
+}
+#page-top > section {
+min-height:400px;
+}
+</style>
+<script>
+function switch1(){
+jQuery('#intro_bg').css('height','0px');
+jQuery('#footer1').hide();
+jQuery('#footer2').hide();
+setTimeout(function(){ 
+hideland();
+ }, 2000);
+}
+function hideland()
+	{
+	jQuery('.intro').css('height','100%');
+	jQuery('#intro_bg').css('height','100%');
+jQuery('.intro-body').show();
+//jQuery('#story').show();
+jQuery('#footer2').show();
+	jQuery('#top_type').hide();
+	  jQuery('#innerpart').hide();
+  jQuery( "#outerpart" ).animate({
+			height: '0%',
+		  }, 0, function() {
+			jQuery('#top_type').show();
+		    jQuery('#top_type').addClass('top_type');
+		jQuery('#top_type').show();
+	setTimeout(function(){ 
+	showsomethings();
+	 }, 3500);
+		// Animation complete.
+		});
+ /*jQuery( "#outerpart" ).fadeOut(1000);
+jQuery('#top_type').addClass('top_type');
+		jQuery('#top_type').fadeIn(1000);
+	setTimeout(function(){ 
+	showsomethings();
+	 }, 5000);
+*/
+	}
+function showsomethings(){
+	jQuery('#read').fadeIn(1000);
+	setTimeout(function(){ 
+	showsomethingsArrow();
+	 }, 1000);
+}
+function showsomethingsArrow()
+	{
+		jQuery('#arrow').show(1000);
+	}
+</script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onLoad="hideland();">
+<!-- Navigation -->
+<a href="mystory.html">
+<div class="our-story">
+<div class="our-story-inner">
+ <p>MY STORY</p>
+ </div>
+</div>
+</a>
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+      <a class="navbar-brand page-scroll" href="index.html"> <img src="https://www.farfaraway.co/img/farfarawaylogo1.svg"> </a>       <ul class="goodtimes-class match-one main about-top" id="match_class" style="">
+  <li> <a class="page-scroll about-class" href="mystory.html">MY STORY</a> </li>
+  </ul></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<div class="outerpart" id="outerpart" style="display:none">
+  <div class="innerpart" id="innerpart" > <img src="https://www.farfaraway.co/img/landing/8.gif" border="0"/> </div>
+</div>
+<!-- Intro Header -->
+<div class="whole-div">
+<div id="whole_div">
+  <header class="intro">
+  	   <ul class="match_class main" id="match_class">
+      <li class="match"><a href="login-path=now.html">LOGIN</a></li>
+    </ul>
+        
+    <ul class="top-icon-ul">
+    <li class="top-icon-li">
+     <button class="c-hamburger c-hamburger--htx" id="top-icon">
+          <span>toggle menu</span>
+        </button>
+
+      <ul class="nav navbar-nav" id="nav" style="display:none;">
+        <script>
+  (function() {
+    "use strict";
+    var toggles = document.querySelectorAll(".c-hamburger");
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+  })();
+</script>
+        <li class="hidden"> <a href="#page-top"></a> </li>
+                        <p class="more-features">More Features</p>
+
+        <li> <a class="page-scroll small-letter not-hover" style="font-weight:bold;text-tranform:lowercase;">MORE FEATURES >></a> </li>
+				<li> <a class="page-scroll" href="index.html">YOUR STORY</a> </li>
+
+        <li> <a class="page-scroll" href="when-will-I-get-married.html">MARRIAGE</a> </li>
+        <li> <a class="page-scroll" href="career-through-astrology.html">CAREER</a> </li>
+
+		<li> <a class="page-scroll" href="relocation-astrology.html">RELOCATION</a></li>
+		<li> <a class="page-scroll" href="goodtimes.html">TRAVEL(FREE)</a></li>
+		<li> <a class="page-scroll" href="compatibility-calculator.html">COMPATIBILITY</a> </li>
+         <li> <a class="page-scroll small-letter not-hover" style="font-weight:bold;text-tranform:lowercase;">special feature >></a> </li>
+  
+		<li> <a class="page-scroll" href="superuser.html">become a SUPERUSER</a></li>
+		<li> <a class="page-scroll grey-box" href="blog/index.html">BLOG - MUST READ</a> </li>
+
+        
+        
+      </ul>
+    </li>
+    </ul>
+    <script>
+	jQuery(document).ready(function(){
+	jQuery('#top-icon').click(function(){
+		jQuery('#nav').fadeToggle();						   
+									   });						   
+							   });
+	</script>
+    <img src="https://www.farfaraway.co/img/intro-bg.jpg" class="img-responsive" id="intro_bg" > 
+	</header>
+	</div>
+  <div class="intro-body" style="display:none;">
+    <p> <img src="https://www.farfaraway.co/img/farfarawaylogo.svg"></p>
+
+    <p class="col-md-offset-5 index" id="top_type">What’s happening in your life right now<span class="top_type_span">|</span></p>
+	
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 top_logo">
+          <p class="header_button" id="read" style="display:none;"><a href="javascript:void(0);" onClick="shows();" class="btn btn-default btn-lg" style="">Check</a></p>
+          <p class="top-button"><a href="javascript:void(0);" onClick="shows();"  style="display:none;" id="arrow" class="btn btn-default btn-lg"> <i class="fa fa-angle-down animated"></i> </a></p>
+		<a href="#now_description" id="hit1" class="btn btn-default btn-lg page-scroll click_down">.</a>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+	function nDescript()
+		{
+			jQuery('#now_description').fadeIn(1000);
+			jQuery('#hit1').trigger('click');
+		}
+</script>
+<!-- Infomation section -->
+<div class="now-description" id="now_description" style="display:none;">
+<div id="when-will-video">
+<div class="ok-check">
+<a href="#story" id="ok_check" class="page-scroll click_down" style="">.</a>
+</p>
+</div>
+
+</div>
+</div>
+<script>
+function shows()
+	{
+		jQuery('#story').fadeIn(1000);
+		jQuery('#ok_check').trigger('click');
+	}
+</script>
+
+<!-- Information section -->
+
+<!-- About Section -->
+<div class="starfield" id="story" style="display:none;">
+  <div class="container-fluid your_story">
+    <!--<img src="img/intro-bg.png" class="img-responsive">-->
+    	<div class="row">
+      <h2 id="story_ids_11">your story, now...</h2>
+      <p id="pos_planet_mess_11">...will be based on the position of the planets <br>
+        on the day of your birth. Please enter the following details carefully. </p>
+      	<div class="pre-mess" id="pre_mess" style="display:none;">Would you like to save your details?</div>
+		<div class="pre-mess-opt" id="pre_mess_opt" style="display:none;"><span class="opt-yes"><a href="javascript:void(0);" onClick="startp('1');">Yes</a></span><span class="opt-no"><a href="javascript:void(0);" onClick="startp(0);">No</a></span></div>
+   <div class="row" id="new-member-inner" style="display:none;">
+    <h2 id="story_ids1">registration</h2>
+	<p class="save_account">Your details will be saved in your account</p>
+      <!-- login form -->
+      <p class="error-reg" id="error_reg" style="display:none;"></p>
+	  <section class="loginform cf">
+		<form name="resgisterUser" id="resgisterUser" method="post" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail">Email</label>
+					<input type="email" name="usermail" id="usermail_r" placeholder="e.g. yourname@email.com" required>
+				</li>
+				<li>
+					<label for="password">Password (4 digit pin)</label>
+					<input type="password" name="password" id="password" placeholder="e.g. 1234" maxlength="4" required></li>
+                    <li>
+					<label for="password">Confirm Password</label>
+					<input type="password" name="c_password" id="c_password" placeholder="e.g. 1234" maxlength="4" required></li>
+				<li class="button">
+					<input type="button" value="Register" onClick="resUser();">
+				</li>
+			</ul>
+		</form>
+		<div class="forget_linkre" style="display:none"><a href="javascript:void(0);" id="forget_linkr">Forgot Password</a></div>
+	</section>
+	      <!-- login form -->
+    </div>
+ 
+		<div class="row" id="existing-member-inner" style="display:none;">
+    <h2 id="story_ids2"> Please login&nbsp;<br><span class="font-change">(Please login to proceed)<br/>Your password has been to your email</span> </h2>
+    <span class="mess_l_1" id="mess_l_1" style="display:none;">Your details will be saved in the details section of your account.</span>
+	    <span class="mess_l_2" id="mess_l_2" style="display:none;">Your details will be saved in the queries section of your account.</span>
+      <span class="mess_l_3" id="mess_l_3" style="display:none"></span>
+	  <!-- login form -->
+      
+	  <section class="loginform cf">
+		
+		<form name="loginUser" id="loginUser" method="post" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail">Email</label>
+					<input type="email" name="usermail" id="usermaillogin" value="" required>
+				</li>
+				<li>
+					<label for="password">Password (4 digit pin)</label>
+					<input type="password" name="password" id="passuserl" placeholder="e.g 1234" maxlength="4" required>
+				</li>    
+				<li class="button">
+					<input type="button" value="Login" onClick="login_direct();">
+				</li>
+			</ul>
+            <span id="error_log" style="display:none;"></span>
+		</form>
+		<div class="forget_link" ><a href="javascript:void(0);" id="forget_link" onClick="forget_direct();">Forgot Password</a></div>
+		<div class="newuser_link" ><a href="javascript:void(0);" id="new_link" style="display:none;">New User</a></div>
+	</section>
+	      <!-- login form -->
+    </div>
+	
+	  <section>
+	          <form id="theForm" class="simform" method= "post" autocomplete="off">
+					<div class="outerWrapper">
+							<div class="innerWrapper">
+								<div class="slide" id="slide1">
+									<span class="slide-title">
+										Your name
+									</span>	
+									<span class="slide-content">
+										<input type="text" name="customer_name" id="customer_name" TABINDEX="1" placeholder="Please type here" class="slide-text"/> 
+										
+									</span>
+									
+									<p class="right-content">1/5</p>
+									<p class="error-msg" id="error-msg-1">*error message</p>
+									
+								</div>
+							
+								<div class="slide" id="slide2" style="display:none">
+									<span class="slide-title">
+										Date of birth
+									</span>	
+									<span class="slide-content">
+                                    <input type="text" name="dob_yyyy" id="dob_yyyy" placeholder="YYYY" class="year" maxlength="4" TABINDEX="2" size="4"/>
+									
+                                    
+                                    <span>/</span>
+									<input type="text" name="dob_mm" id="dob_mm" placeholder="MM" size="2" maxlength="2" class="month"  TABINDEX="3"/>
+                                    
+                                    <span>/</span>
+                                    <input type="text" name="dob_dd" id="dob_dd" placeholder="DD"  maxlength="2" class="date" size="2" maxlength="2"   TABINDEX="4"/>
+											
+										
+										</span>
+																				
+										
+										<p class="left-content">e.g. enter 1990 04 13 for 13th April 1990 </p>
+										<p class="right-content">2/5</p>
+										<p class="error-msg" id="error-msg-2">*error message</p>
+										
+								</div>
+								
+								<div class="slide" id="slide3" style="display:none">
+									<span class="slide-title">
+										Time of birth
+									</span>	
+									<span class="slide-content" id="hour">
+										<input id="time_birth_hr" name="time_birth_hr" type="text" placeholder="HR" maxlength="2" TABINDEX="5" >		
+                                         <span>/</span>	
+										<input id="time_birth_min" name="time_birth_min" type="text" placeholder="MIN" maxlength="2"  TABINDEX="6" >	
+									</span>
+									
+									
+									 <p class="left-content">e.g enter 21 32 for 9 32 pm </p>
+									 <p class="right-content">3/5</p>
+									 <p class="error-msg" id="error-msg-3">*error message</p>	
+								</div>
+								
+								<div class="slide" id="slide4" style="display:none">
+									<span class="slide-title">
+										Place of birth
+									</span>	
+									<span class="slide-content">
+										  <input id="place_dob" name="place_dob" type="text" placeholder="Please select from the drop-down" onBlur="checkplacedob();" onKeyUp="checkcityAPI();" TABINDEX="7" >
+										  <input id="place_dob1" name="place_dob1" type="hidden">
+										
+									</span>
+									
+									
+									<p class="right-content">4/5</p>
+									<p class="error-msg" id="error-msg-4">*error message</p>
+								</div>
+								
+								<div class="slide" id="slide5" style="display:none">
+									<span class="slide-title">
+										Your email
+									</span>	
+									<span class="slide-content">
+									  <input id="email" name="email" type="text" placeholder="Please type here" onBlur="validateEmail();" TABINDEX="8" placeholder="please type here" value="">
+                	
+									</span>
+									
+									
+									
+									<p class="right-content">5/5</p>
+									<p class="error-msg" id="error-msg-5">*error message</p>
+								</div>
+								<div id="listed_city1">
+								<div class="listed_city" id="listed_city" style="display:none;"></div>
+								</div>
+								<span class="prev-slide" id="prev-slide" style="display:none;"><a href="javascript:void(0);" onClick="prevSlide();"> < </a></span>
+								<span class="next-slide" id="next-slide"><a href="javascript:void(0);" onClick="nextSlide();"> > </a></span>
+								<p class="arrow">
+								</p>
+                                <div class="under-line">
+									<p class="fifth-line" id="fifth_line" style="padding-left: 0%;"></p>
+									</div>
+							</div>
+						</div>
+						<input type="hidden" name="slide_n" id="slide_n" value="1"/>
+
+        </form>
+        <!-- /simform -->
+        <a href="#chart" id="chartpress" class="page-scroll click_down"></a> </section>
+    </div>
+	  </div>
+</div>
+
+
+<div class="container-fluid" id="chart" style="display:none;">
+  <div class="row">
+    <div class="about"> </div>
+  </div>
+  
+</div>
+
+<p id="dpick" class="dpick" style="display:none;">Change date: 
+	<input type="text" id="datepicker" class="datePick" value="22-08-20">
+</p>
+<a style="" class="page-scroll click_down" id="ok_check1" href="#story">.</a>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<script>
+$j = $.noConflict();
+  $j(function() {
+    $j( "#datepicker" ).datepicker({
+	onSelect: function(dateText, inst) {
+        
+		var res = dateText.split("-"); 
+		if(res[2] > 2011 && res[2] < 2023){
+		var date = $(this).val();
+        var time = $('#time').val();
+        
+     dasharender1(date);
+	}
+	else
+	{
+		alert('date range should be 2012 to 2022');
+		return false;
+	}
+    },
+
+	dateFormat: 'dd-mm-yy'
+	});
+	
+  });
+  </script>
+<p class="top-button birth-button" style="display:none" id="birth-button">
+<a href="javascript:void(0);" class="btn btn-circle"  id="arrows" onClick="lastblock();"> <i class="fa fa-angle-down animated"></i> <span class="arrow-content">your story</span></a>
+
+</p>
+<a href="#last_block" class="page-scroll click_down" id="lastdot">.</a>
+<div class="container-fluid last_block" id="last_block" style="display:none;"> </div>
+
+<div class="faq_top" id="faq_top" style="display:none"> 
+  <div id="faq">
+    <h2 id="faq_plus" class="visible">FAQs +</h2>
+	<h2 id="faq_mins" class="hide">FAQs -</h2>
+  </div>
+  <div class="container-fluid detail_block " id="faq-detail" style="display:none;">
+    <h2></h2>
+    
+    <div class="detail">
+      <ul>
+		
+		<li id="q1">
+		  <h4>What do mean by important planets?</h4>
+          <p>You are running the time period of the planets marked important, as per the Vimshottari dasha system – a vedic technique. So the planets marked "important" are affecting you the most at the moment.</p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+			jQuery(document).ready(function(){
+			jQuery('#faq').click(function(){
+			jQuery('#faq-detail').fadeToggle();								 
+											 });								
+											});
+			</script>
+<!--------------------------footer-start--------------------------- -->
+
+<div class="container-fluid" id="footer1" style="display:none">
+  <div class="row">
+
+  </div>
+</div>
+
+<div class="container-fluid" id="footer2" style="display:none">
+  <div class="row">
+    <div class="footer">
+      <h1 class="footercopy">&#169;2020 FARFARAWAY</h1>
+      <p>Made with love in <img src="https://www.farfaraway.co/img/india-flag.png" alt="alternative text" title="India" border="0"> |<span> farfarawayguy@gmail.com</span></p>
+      <ul class="social-footer">
+
+            <li class="fb"><a href="https://www.facebook.com/farfaraway.co/" target="_blank"><img src="https://www.farfaraway.co/img/facebook.png" border="0"></a></li>
+
+            <li class="yt"><a href="https://www.youtube.com/channel/UC3S6prVIn1aX9LuO1E3_wAw" target="_blank"><img src="https://www.farfaraway.co/img/youtube.png" border="0"></a></li>
+
+         </ul>
+    </div>
+  </div>
+</div>
+<!--------------------------footer-end--------------------------- -->
+<!--<div style="overflow:hidden;">
+
+
+
+    <div class="form-group">
+
+
+
+        <div class="row">
+
+
+
+            <div class="col-md-8">
+
+
+
+                <div id="datetimepicker12"></div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+ 
+
+
+
+</div>-->
+<!-- Map Section -->
+<!-- Footer -->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/grayscale.js"></script>
+<script>
+
+
+
+/**
+
+
+
+ * A jQuery plugin that generates an interactive starfield inside a canvas element.
+
+
+
+ *
+
+
+
+ * Based on Chiptune's starfield.js:
+
+
+
+ * https://github.com/chiptune/js/blob/master/starfield.html
+
+
+
+ */
+
+
+
+;(function ( $, window, document, undefined ) {
+
+
+
+	// Plugin constructor
+
+
+
+	var Starfield = function(el, options) {
+
+
+
+		this.el			= el;
+
+
+
+		this.$el		= $(el);
+
+
+
+		this.options	= options;
+
+
+
+
+
+
+
+		that			= this;
+
+
+
+	};
+
+
+
+
+
+
+
+	var isPlaying;
+
+
+
+	var isInited	= false;
+
+
+
+	var canCanvas	= false;
+
+
+
+	var animId;
+
+
+
+
+
+
+
+	// https://paulirish.com/2011/requestanimationframe-for-smart-animating/
+
+
+
+	// https://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+
+
+
+
+
+
+
+	// requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
+
+
+
+
+
+
+
+	// MIT license
+
+
+
+
+
+
+
+	(function() {
+
+
+
+		var lastTime = 0;
+
+
+
+		var vendors = ['ms', 'moz', 'webkit', 'o'];
+
+
+
+		for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+
+
+
+			window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+
+
+
+			window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+
+
+
+									   || window[vendors[x]+'CancelRequestAnimationFrame'];
+
+
+
+		}
+
+
+
+	 
+
+
+
+		if (!window.requestAnimationFrame)
+
+
+
+			window.requestAnimationFrame = function(callback, element) {
+
+
+
+				var currTime = new Date().getTime();
+
+
+
+				var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+
+
+
+				var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+
+
+
+				  timeToCall);
+
+
+
+				lastTime = currTime + timeToCall;
+
+
+
+				return id;
+
+
+
+			};
+
+
+
+	 
+
+
+
+		if (!window.cancelAnimationFrame)
+
+
+
+			window.cancelAnimationFrame = function(id) {
+
+
+
+				clearTimeout(id);
+
+
+
+			};
+
+
+
+	}());
+
+
+
+  
+
+
+
+	// Plugin prototype
+
+
+
+	Starfield.prototype = {
+
+
+
+		// Default settings
+
+
+
+		defaults: {
+
+
+
+			starColor:	"rgba(0,0,0,1)", 
+
+
+
+			bgColor:	"rgba(242,242,242,1)",
+
+
+
+			mouseMove:	false,
+
+
+
+			mouseColor:	"rgba(0,0,0,0.2)",
+
+
+
+			mouseSpeed:	0,
+
+
+
+			fps:		0,
+
+
+
+			speed:		2,
+
+
+
+			quantity:	75,
+
+
+
+			ratio:		100,
+
+
+
+			divclass:	"starfield"
+
+
+
+		},
+
+
+
+
+
+
+
+		// Resize the canvas
+
+
+
+		resizer: function() {
+
+
+
+			var oldStar				= this.star;
+
+
+
+			var initW				= this.context.canvas.width;
+
+
+
+			var initH				= this.context.canvas.height;
+
+
+
+
+
+
+
+			this.w					= this.$el.width();
+
+
+
+			this.h					= this.$el.height();
+
+
+
+			this.x					= Math.round(this.w / 2);
+
+
+
+			this.y					= Math.round(this.h / 2);
+
+
+
+
+
+
+
+			// Check if the device is in portrait orientation
+
+
+
+			this.portrait			= this.w < this.h;
+
+
+
+
+
+
+
+			// Get the ratio of the old height to the new height
+
+
+
+			var ratX 				= this.w / initW;
+
+
+
+			var ratY				= this.h / initH;
+
+
+
+
+
+
+
+			this.context.canvas.width	= this.w;
+
+
+
+			this.context.canvas.height	= this.h;
+
+
+
+
+
+
+
+			// Recalculate the position of each star proportionally to new w and h
+
+
+
+			for(var i = 0; i < this.n; i++) {
+
+
+
+				this.star[i][0]	= oldStar[i][0] * ratX;
+
+
+
+				this.star[i][1]	= oldStar[i][1] * ratY;
+
+
+
+
+
+
+
+				this.star[i][3] = this.x + (this.star[i][0] / this.star[i][2]) * this.star_ratio;
+
+
+
+				this.star[i][4] = this.y + (this.star[i][1] / this.star[i][2]) * this.star_ratio;
+
+
+
+			}
+
+
+
+
+
+
+
+			that.context.fillStyle		= that.settings.bgColor;
+
+
+
+			this.context.strokeStyle	= this.settings.starColor;
+
+
+
+		},
+
+
+
+
+
+
+
+		init: function() {
+
+
+
+			// Get default settings 
+
+
+
+			this.settings = $.extend({}, this.defaults, this.options);
+
+
+
+
+
+
+
+			// Query variables
+
+
+
+			var url	= document.location.href;
+
+
+
+			this.n	= parseInt(
+
+
+
+				(url.indexOf('n=') != -1) ? url.substring(url.indexOf('n=') + 2, (
+
+
+
+					(url.substring(
+
+
+
+						url.indexOf('n=') + 2,
+
+
+
+						url.length)
+
+
+
+					).indexOf('&') != -1) ? url.indexOf('n=') + 2 + (url.substring(
+
+
+
+						url.indexOf('n=') + 2,
+
+
+
+						url.length)
+
+
+
+					).indexOf('&') :
+
+
+
+						url.length) :
+
+
+
+							this.settings.quantity
+
+
+
+			);
+
+
+
+
+
+
+
+			this.flag				= true;
+
+
+
+			this.test 				= true;
+
+
+
+			this.w					= 0;
+
+
+
+			this.h					= 0;
+
+
+
+			this.x					= 0;
+
+
+
+			this.y					= 0;
+
+
+
+			this.z					= 0;
+
+
+
+			this.star_color_ratio	= 0;
+
+
+
+			this.star_x_save		= 0;
+
+
+
+			this.star_y_save		= 0;
+
+
+
+			this.star_ratio			= this.settings.ratio;
+
+
+
+			this.star_speed			= this.settings.speed;
+
+
+
+			this.star_speed_save	= 0;
+
+
+
+			this.star				= new Array(this.n);
+
+
+
+			this.color				= this.settings.starColor;
+
+
+
+			this.opacity			= 0.1;
+
+
+
+
+
+
+
+			this.cursor_x			= 0;
+
+
+
+			this.cursor_y			= 0;
+
+
+
+			this.mouse_x			= 0;
+
+
+
+			this.mouse_y			= 0;
+
+
+
+
+
+
+
+			this.canvas_x			= 0;
+
+
+
+			this.canvas_y			= 0;
+
+
+
+			this.canvas_w			= 0;
+
+
+
+			this.canvas_h			= 0;
+
+
+
+			
+
+
+
+			this.fps				= this.settings.fps;
+
+
+
+
+
+
+
+			// Check for device orientation support
+
+
+
+			this.desktop			= !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|IEMobile)/);
+
+
+
+			this.orientationSupport	= window.DeviceOrientationEvent !== undefined;
+
+
+
+			this.portrait			= null;
+
+
+
+
+
+
+
+			// Inject the canvas element
+
+
+
+			var canvasInit = function(){
+
+
+
+				that.w			= that.$el.width();
+
+
+
+				that.h			= that.$el.height();
+
+
+
+
+
+
+
+				that.initW		= that.w;
+
+
+
+				that.initH		= that.h;
+
+
+
+
+
+
+
+				that.portrait	= that.w < that.h;
+
+
+
+
+
+
+
+				that.wrapper	= $('<canvas />')
+
+
+
+				.addClass(that.settings.divclass);
+
+
+
+
+
+
+
+				that.wrapper.appendTo(that.el);
+
+
+
+
+
+
+
+				that.starz	= $('canvas', that.el);
+
+
+
+
+
+
+
+				if (that.starz[0].getContext) { // Can canvas?
+
+
+
+					that.context	= that.starz[0].getContext('2d');
+
+
+
+					canCanvas		= true;
+
+
+
+				}
+
+
+
+
+
+
+
+				that.context.canvas.width = that.w;
+
+
+
+				that.context.canvas.height = that.h;
+
+
+
+			}
+
+
+
+			canvasInit();
+
+
+
+
+
+
+
+			// Create initial star array and canvas context
+
+
+
+			var starInit = function(){
+
+
+
+				// Get context for the canvas element
+
+
+
+				if(canCanvas){ // Check for canvas drawering abilities.
+
+
+
+					that.x					= Math.round(that.w / 2);
+
+
+
+					that.y					= Math.round(that.h / 2);
+
+
+
+					that.z					= (that.w + that.h) / 2;
+
+
+
+					that.star_color_ratio	= 1 / that.z;
+
+
+
+					that.cursor_x			= that.x;
+
+
+
+					that.cursor_y			= that.y;
+
+
+
+
+
+
+
+					// Big bang
+
+
+
+					for(var i = 0; i < that.n; i++) {
+
+
+
+						that.star[i]	= new Array(5); 
+
+
+
+
+
+
+
+						that.star[i][0]	= Math.random() * that.w * 2 - that.x * 2;
+
+
+
+						that.star[i][1]	= Math.random() * that.h * 2 - that.y * 2;
+
+
+
+						that.star[i][2]	= Math.round(Math.random() * that.z);
+
+
+
+						that.star[i][3]	= 0;
+
+
+
+						that.star[i][4]	= 0;
+
+
+
+					}
+
+
+
+
+
+
+
+					// Set the colors
+
+
+
+					that.context.fillStyle		= that.settings.bgColor;
+
+
+
+					that.context.strokeStyle	= that.settings.starColor;
+
+
+
+				} else {
+
+
+
+					return;
+
+
+
+				}
+
+
+
+			}
+
+
+
+			starInit();
+
+
+
+
+
+
+
+			isInited = true;
+
+
+
+		},
+
+
+
+
+
+
+
+		// Iterate over every star on the field and move it slightly
+
+
+
+		anim: function(){
+
+
+
+			this.mouse_x	= this.cursor_x - this.x;
+
+
+
+			this.mouse_y	= this.cursor_y - this.y;
+
+
+
+			this.context.fillRect(0, 0, this.w, this.h);
+
+
+
+
+
+
+
+			for(var i = 0; i < this.n; i++) {
+
+
+
+				this.test			= true;
+
+
+
+				this.star_x_save	= this.star[i][3];
+
+
+
+				this.star_y_save	= this.star[i][4];
+
+
+
+				this.star[i][0]	+= this.mouse_x >> 4;
+
+
+
+
+
+
+
+				// X coords
+
+
+
+				if(this.star[i][0] > this.x << 1) {
+
+
+
+					this.star[i][0] -= this.w << 1;
+
+
+
+					this.test = false;
+
+
+
+				}
+
+
+
+				if(this.star[i][0] <- this.x << 1) {
+
+
+
+					this.star[i][0] += this.w << 1;
+
+
+
+					this.test = false;
+
+
+
+				}
+
+
+
+
+
+
+
+				// Y coords
+
+
+
+				this.star[i][1] += this.mouse_y >> 4;
+
+
+
+				if(this.star[i][1] > this.y << 1) {
+
+
+
+					this.star[i][1] -= this.h << 1;
+
+
+
+					this.test = false;
+
+
+
+				}
+
+
+
+				if(this.star[i][1] <- this.y << 1) {
+
+
+
+					this.star[i][1] += this.h << 1;
+
+
+
+					this.test = false;
+
+
+
+				}
+
+
+
+
+
+
+
+				// Z coords
+
+
+
+				this.star[i][2] -= this.star_speed;
+
+
+
+				if(this.star[i][2] > this.z) {
+
+
+
+					this.star[i][2] -= this.z;
+
+
+
+					this.test = false;
+
+
+
+				}
+
+
+
+				if(this.star[i][2] < 0) {
+
+
+
+					this.star[i][2] += this.z;
+
+
+
+					this.test = false;
+
+
+
+				}
+
+
+
+
+
+
+
+				this.star[i][3] = this.x + (this.star[i][0] / this.star[i][2]) * this.star_ratio;
+
+
+
+				this.star[i][4] = this.y + (this.star[i][1] / this.star[i][2]) * this.star_ratio;
+
+
+
+
+
+
+
+				if(this.star_x_save > 0
+
+
+
+				&& this.star_x_save < this.w
+
+
+
+				&& this.star_y_save > 0
+
+
+
+				&& this.star_y_save < this.h
+
+
+
+				&& this.test) {
+
+
+
+					this.context.lineWidth = (1 - this.star_color_ratio * this.star[i][2]) * 2;
+
+
+
+					this.context.beginPath();
+
+
+
+					this.context.moveTo(this.star_x_save,this.star_y_save);
+
+
+
+					this.context.lineTo(this.star[i][3], this.star[i][4]);
+
+
+
+					this.context.stroke();
+
+
+
+					this.context.closePath();
+
+
+
+				}
+
+
+
+			}
+
+
+
+		},
+
+
+
+
+
+
+
+		loop: function(){
+
+
+
+			this.anim();
+
+
+
+
+
+
+
+			animId = window.requestAnimationFrame(function(){that.loop()});
+
+
+
+		},
+
+
+
+
+
+
+
+		move: function(){
+
+
+
+			var doc	= document.documentElement;
+
+
+
+
+
+
+
+			if (this.orientationSupport && !this.desktop) {
+
+
+
+				//$('<p class="output"></p>').prependTo('.content');
+
+
+
+				//var output = document.querySelector('.output');
+
+
+
+				window.addEventListener('deviceorientation', handleOrientation, false);
+
+
+
+			} else {
+
+
+
+				window.addEventListener('mousemove', handleMousemove, false);
+
+
+
+			}
+
+
+
+
+
+
+
+			function handleOrientation(event) {
+
+
+
+				if( event.beta !== null && event.gamma !== null) {
+
+
+
+
+					var x = event.gamma, y = event.beta;
+
+
+
+
+
+
+
+					if (!that.portrait) {
+
+
+
+						x = event.beta * -1;
+
+
+
+						y = event.gamma;
+
+
+
+					}
+
+
+
+
+
+
+
+					that.cursor_x	= (that.w / 2) + (x * 5);
+
+
+
+					that.cursor_y	= (that.h / 2) + (y * 5);
+
+
+
+
+
+
+
+					/*var output = document.querySelector('.output');
+
+
+
+					output.innerHTML = "rotZ : " + Math.round(event.alpha) + "<br />\n";
+
+
+
+					output.innerHTML += "rotX: " + Math.round(event.beta) + "<br />\n";
+
+
+
+					output.innerHTML += "rotY: " + Math.round(event.gamma) + "<br />\n";*/
+
+
+
+				}
+
+
+
+			}
+
+
+
+
+
+
+
+			function handleMousemove(event) {
+
+
+
+				that.cursor_x	= event.pageX || event.clientX + doc.scrollLeft - doc.clientLeft;
+
+
+
+				that.cursor_y	= event.pageY || event.clientY + doc.scrollTop - doc.clientTop;
+
+
+
+			}
+
+
+
+		},
+
+
+
+
+
+
+
+		stop: function(){
+
+
+
+			window.cancelAnimationFrame(animId);
+
+
+
+
+
+
+
+			isPlaying = false;
+
+
+
+		},
+
+
+
+
+
+
+
+		// this.start this whole thing
+
+
+
+		start: function() {
+
+
+
+			// Initialize
+
+
+
+			if (!isInited) {
+
+
+
+				isInited = true;
+
+
+
+				this.init();
+
+
+
+			}
+
+
+
+			
+
+
+
+			// Start the animation loop
+
+
+
+			if (!isPlaying) {
+
+
+
+				isPlaying = true;
+
+
+
+				this.loop();
+
+
+
+			}
+
+
+
+
+
+
+
+			window.addEventListener('resize', function(){that.resizer()}, false);
+
+
+
+
+
+
+
+			window.addEventListener('orientationchange', function(){that.resizer()}, false);
+
+
+
+
+
+
+
+			// Move stars on mouse move
+
+
+
+			if (this.settings.mouseMove) {
+
+
+
+				this.move();
+
+
+
+			}
+
+
+
+
+
+
+
+			return this;
+
+
+
+		}
+
+
+
+	}
+
+
+
+
+
+
+
+	Starfield.defaults	= Starfield.prototype.defaults;
+
+
+
+
+
+
+
+	// Finally, the actual plugin code
+
+
+
+	$.fn.starfield = function(options){
+
+
+
+		return this.each(function() {
+
+
+
+			new Starfield(this, options).start();
+
+
+
+		});
+
+
+
+	}
+
+
+
+
+
+
+
+	window.Starfield = Starfield;
+
+
+
+})( jQuery, window, document );
+
+
+
+
+
+
+
+jQuery(document).ready(function(){
+
+
+
+jQuery('.starfield').starfield();
+
+
+
+   
+
+
+
+});
+
+
+
+</script>
+<script>
+
+			var theForm = document.getElementById( 'theForm' );
+
+
+
+			new stepsForm( theForm, {
+
+				onSubmit : function( form ) {
+
+					// hide form
+
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+
+
+					/*
+
+					form.submit()
+
+					or
+
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+
+					*/
+
+
+
+					// let's just simulate something...
+
+					var messageEl = theForm.querySelector( '.final-message' );
+
+					messageEl.innerHTML = '';
+
+					
+
+					classie.addClass( messageEl, 'show' );
+
+
+						
+					jQuery('#pre_mess_opt').fadeIn(1000);
+					jQuery('#pre_mess').fadeIn(1000);
+					jQuery('#pos_planet_mess').hide();
+					jQuery('#story_ids').hide();
+					
+	
+					
+
+			
+					
+
+					
+
+
+
+
+
+				}
+
+			});
+
+			function startp(m)
+				{
+				jQuery('#pre_mess_opt').hide();
+				jQuery('#pre_mess').hide();
+				if(m == 1){
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/checkCustomerprocess.php?email='+jQuery('#email').val(),
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+										if(data == 0){
+										jQuery('#story_ids_11').fadeIn(1000);
+										jQuery('#pos_planet_mess_11').fadeIn(1000);
+											jQuery('#story_ids_11').html('All set :)');		
+						
+									jQuery('#pos_planet_mess_11').html('Sit back, relax, have a cup of coffee </br> and enjoy your story');	
+								
+											autologingoodtime(jQuery('#email').val());	
+											
+										}else if(data == 'yes'){
+											sentpassmail(jQuery('#email').val());
+											jQuery('#existing-member-inner').fadeIn(1000);
+											document.getElementById('usermaillogin').value = jQuery('#email').val();
+											//jQuery('#mess_l_2').fadeIn(1000);
+										}
+										else
+										{
+										jQuery('#story_ids_11').fadeIn(1000);
+										jQuery('#pos_planet_mess_11').fadeIn(1000);
+											jQuery('#story_ids_11').html('All set :)');		
+						
+									jQuery('#pos_planet_mess_11').html('Sit back, relax, have a cup of coffee </br> and enjoy your story');	
+								
+											startprocess();
+										}
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+							}
+							else{
+							startprocess();
+							}
+				}
+			
+		function sentpassmail(mail)
+				{
+				  forget_direct1();
+				}
+		function forget_direct1()
+				{
+								jQuery.ajax({
+
+										url: 'https://www.farfaraway.co/forgot_pass_direct.php?email='+jQuery('#email').val(),
+										dataType: 'text',
+										contentType: 'application/x-www-form-urlencoded',
+										success: function( data, textStatus, jQxhr ){
+												
+										},
+										error: function( jqXhr, textStatus, errorThrown ){   
+
+										}
+
+							});
+			
+				}
+				
+			function autologingoodtime(mailtxt)
+				{
+				
+					   var dob_yyyy = document.getElementById('dob_yyyy').value;	
+					   var dob_mm = document.getElementById('dob_mm').value;	
+					   var dob_dd = document.getElementById('dob_dd').value; 
+					   var dob = dob_dd+'-'+dob_mm+'-'+dob_yyyy;
+					   jQuery.ajax({
+													url: 'https://www.farfaraway.co/autologinnow.php?dob='+dob+'&mailid='+mailtxt,
+													dataType: 'text',	
+													contentType: 'application/x-www-form-urlencoded',
+													success: function( data, textStatus, jQxhr ){
+
+											jQuery.ajax({
+
+												url: 'https://www.farfaraway.co/header.php',
+
+												dataType: 'text',
+
+												contentType: 'application/x-www-form-urlencoded',
+
+												success: function( data, textStatus, jQxhr ){
+													jQuery('#whole_div').html(data);
+													jQuery('#existing-member-inner').hide();
+													startprocess();
+													
+											},
+
+												error: function( jqXhr, textStatus, errorThrown ){   
+
+												}
+
+											});
+											
+													},
+													error: function( jqXhr, textStatus, errorThrown ){
+													}
+								   });
+	}
+			function startprocess()
+			{
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecustransit_pay.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									cron_recording();
+									jQuery('#story_ids').fadeIn(1000);
+									jQuery('#pos_planet_mess').fadeIn(1000);
+									jQuery('#story_ids').html('All set :)');		
+						
+									jQuery('#pos_planet_mess').html('Sit back, relax, have a cup of coffee </br> and enjoy your story');	
+									
+									getgoodtime();
+										
+							
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+			}
+			
+			function getgoodtime()
+				{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/getgoodtime_career.php?behave=0',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										dasharender();
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+			
+			function dasharender()
+				{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/dashanow.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										renderNow();
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+
+			function renderNow()
+
+				{
+
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/nowtable20.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									
+									jQuery('#chart').html(data);
+									jQuery('#chart').fadeIn(1000);
+									jQuery('#birth-button').fadeIn(1000);
+									jQuery('#footer2').fadeIn(1000);
+									jQuery('#learn-vedic-link').fadeIn(1000);
+									//nowstoriesRender();
+									setTimeout(function(){ 
+
+									
+
+									jQuery('#chartpress').trigger('click');
+
+
+
+									 }, 2000);
+									jQuery('#dpick').fadeIn(1000);
+									
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+								
+
+				}
+		function login_direct()
+			{
+			
+			jQuery('#error_log').hide();
+			
+			if(document.getElementById('usermaillogin').value == '')
+					{
+						jQuery('#error_log').html('enter email address.');
+						jQuery('#error_log').fadeIn(1000);
+						return false;
+					}
+				else if(document.getElementById('passuserl').value == '')
+					{
+								jQuery('#error_log').html('enter password.');
+						jQuery('#error_log').fadeIn(1000);
+					return false;
+					}
+					else{
+							jQuery('#new_link').hide();
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/userloginAuth_direct.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#loginUser').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+											if(data == 'yes')
+												{
+													
+											jQuery.ajax({
+
+												url: 'https://www.farfaraway.co/header.php',
+
+												dataType: 'text',
+
+												contentType: 'application/x-www-form-urlencoded',
+
+												success: function( data, textStatus, jQxhr ){
+													jQuery('#whole_div').html(data);
+													jQuery('#existing-member-inner').hide();
+													jQuery('#story_ids_11').fadeIn(1000);
+													jQuery('#pos_planet_mess_11').fadeIn(1000);
+													jQuery('#story_ids_11').html('All set :)');		
+										
+													jQuery('#pos_planet_mess_11').html('Sit back, relax, have a cup of coffee </br> and enjoy your story');	
+													
+													startprocess();
+													
+											},
+
+												error: function( jqXhr, textStatus, errorThrown ){   
+
+												}
+
+											});
+													
+													
+												}
+											else if(data == 'not1')
+												{
+													jQuery('#error_log').html('The email is not registered, please click the new user section below.');
+													jQuery('#error_log').fadeIn(1000);
+													jQuery('#new_link').fadeIn(1000);
+												}
+												else
+												{
+													jQuery('#error_log').html('Please check the password.');
+													jQuery('#error_log').fadeIn(1000);
+												}
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+						});
+				}
+			}
+function resUser()
+		{
+			var numbers = /^[0-9]+$/;
+			jQuery('#error_reg').hide();
+			var usermail_r = document.getElementById('usermail_r').value;
+			var pass = document.getElementById('password').value;
+			var c_pass = document.getElementById('c_password').value;
+			if(!pass.match(numbers) || pass == '')
+				{
+				jQuery('#error_reg').html('please enter a 4 digit code.');
+				
+				jQuery('#error_reg').fadeIn(1000);
+				document.getElementById('password').focus();
+				return false;
+				}
+			else if(usermail_r == '')
+				{
+				jQuery('#error_reg').html('please enter username.');
+				
+				jQuery('#error_reg').fadeIn(1000);
+				document.getElementById('usermail_r').focus();
+				return false;
+				}
+			else if(!c_pass.match(numbers) || c_pass == '')
+				{
+				jQuery('#error_reg').html('please enter a 4 digit code.');
+
+				jQuery('#error_reg').fadeIn(1000);
+								document.getElementById('c_password').focus();
+				return false;
+						
+				}
+			else if(pass != c_pass)
+				{
+				
+				jQuery('#error_reg').html('password don’t match.');
+				jQuery('#error_reg').fadeIn(1000);
+								document.getElementById('c_password').focus();
+				return false;
+
+				}
+			else
+			{
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/userpost.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#resgisterUser').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									  if(data == 'save'){
+																			
+											jQuery.ajax({
+
+												url: 'https://www.farfaraway.co/header.php',
+
+												dataType: 'text',
+
+												contentType: 'application/x-www-form-urlencoded',
+
+												success: function( data, textStatus, jQxhr ){
+													jQuery('#whole_div').html(data);
+													jQuery('#new-member-inner').hide();
+													startprocess();
+													
+											},
+
+												error: function( jqXhr, textStatus, errorThrown ){   
+
+												}
+
+											});
+													
+										}
+										if(data == 'not'){
+																	
+											jQuery('#error_reg').html('Your email is already registered,<br/>please click forgot password.');
+											jQuery('#error_reg').fadeIn(1000);
+											jQuery('.forget_linkre').fadeIn(1000);
+										}
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+						});
+		}
+		}
+function forget_direct()
+	{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/forgot_pass_direct.php?email='+jQuery('#usermaillogin').val(),
+									dataType: 'text',
+									contentType: 'application/x-www-form-urlencoded',
+									success: function( data, textStatus, jQxhr ){
+										if(data == 'yes')
+											{
+												jQuery('#mess_l_1').hide();
+											jQuery('#mess_l_3').html('Password has been sent to your email.');
+											jQuery('#mess_l_3').fadeIn(1000);						
+											}
+											
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+						});
+		
+	}
+
+				function dasharender1(dates)
+				{
+												jQuery('#ok_check1').trigger('click');
+									jQuery('#chart').html('');
+									jQuery('#chart').hide();
+									jQuery('#birth-button').hide();
+								jQuery('#last_block').html('');
+									jQuery('#last_block').hide();
+jQuery('#footer1').hide();
+jQuery('#faq_top').hide();
+jQuery('#dpick').hide();
+if(jQuery('#faq_mins').hasClass('visible'))
+	{
+		jQuery('#faq_mins').removeClass('visible');
+		jQuery('#faq_mins').addClass('hide');
+		jQuery('#faq_plus').removeClass('hide');
+		jQuery('#faq_plus').addClass('visible');
+		jQuery('#faq-detail').hide();
+	}
+	jQuery('#footer2').hide();
+	
+	
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/dashanow.php?dates='+dates,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										renderNow1(dates);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+
+				
+				function renderNow1(dates)
+
+				{
+								
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/nowtable20.php?dates='+dates,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									
+									jQuery('#chart').html(data);
+									jQuery('#chart').fadeIn(1000);
+									jQuery('#birth-button').fadeIn(1000);
+									jQuery('#footer2').fadeIn(1000);
+									jQuery('#footer2').fadeIn(1000);
+									jQuery('#learn-vedic-link').fadeIn(1000);
+									//nowstoriesRender();
+									setTimeout(function(){ 
+
+									
+
+									jQuery('#chartpress').trigger('click');
+
+
+
+									 }, 2000);
+									jQuery('#dpick').fadeIn(1000);
+									
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+								
+
+				}
+				function lastblock()
+					{
+						nowstoriesRender();
+					}
+				function nowstoriesRender()
+					{
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/stories_now20.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#last_block').html(data);
+									jQuery('#last_block').show();
+									jQuery('#lastdot').trigger('click');
+										window.setTimeout(function ()
+
+											{
+
+												jQuery('#faq_top').fadeIn(1000);
+												jQuery('#footer1').fadeIn(1000);
+											}, 2000);
+		
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+				
+				function storiesRender()
+					{
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/stories.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#last_block').html(data);
+									jQuery('#faq_top').fadeIn(1000);
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+					
+					function checkcityAPI()
+						{
+							jQuery('#listed_city').hide();
+							var spaceStr = document.getElementById('place_dob').value;
+							var spaceStr = spaceStr.split(","); 
+							
+							var len = jQuery('#place_dob').val().length;
+							if(spaceStr != '' && len > 3){
+							var vv =	spaceStr[0]; 
+														var vv1 = vv.replace(/\s+/g, '');
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/cities.php?city='+vv1,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+jQuery("#listed_city").fadeIn(1000);
+									jQuery('#listed_city').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+						}
+
+						}
+				
+				function tablefordetails()
+					{
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/detailstable.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#tablefordetails').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+
+			function checkvalidate(idinput)
+
+				{
+
+				
+
+						var ob = document.getElementById(idinput).value;
+						if(ob == '')
+							{
+									jQuery('#errorname').show();
+									jQuery('#errorname').html('*please enter name');
+									return false;
+							}
+						else
+							{
+						ob1 = ob.slice(-1);
+
+						var letters = /^[A-Za-z]+$/;  
+
+   if(ob1.match(letters) || ob1.match(/\s/g))  
+
+     {  
+jQuery('#errorname').hide();
+
+      return true;  
+
+     }  
+
+   else  
+
+     {  
+
+	  
+
+       var shortenedString = ob.substr(0,(ob.length -1));
+
+        jQuery('#'+idinput).val(shortenedString);
+
+     return false;  
+
+     
+
+	}	 
+}
+				}
+
+				
+
+	function checkdaysvalid()
+
+		{
+
+			var dd = document.getElementById('dob_dd').value;
+
+			var mm = document.getElementById('dob_mm').value;
+
+			if(mm == '')
+
+				{
+
+				  jQuery('#errordob').html('Please enter month');
+
+						jQuery('#errordob').show();
+
+						 document.getElementById('dob_mm').value = "";
+
+							window.setTimeout(function ()
+
+							{
+
+								document.getElementById('dob_mm').focus();
+
+							}, 0);
+
+				}
+				
+		if(mm == 1 || mm == 3 || mm == 5 || mm == 7 || mm == 8 || mm == 10 || mm == 12 )
+
+				{
+
+						if(dd >0 && dd<=31)
+
+							{
+
+							jQuery('#errordob').html('');
+
+								jQuery('#errordob').hide();
+
+								return true;
+
+							}
+
+						else
+
+							{
+
+								jQuery('#errordob').html('Please check the date');
+
+								jQuery('#errordob').show();
+
+								document.getElementById('dob_dd').value = '';
+
+								document.getElementById('dob_dd').focus();
+
+								return false;
+
+							}
+
+				}
+
+			else if(mm == 2)
+
+				{
+
+				var datelap ='';	
+
+                var year = document.getElementById('dob_yyyy').value;				
+
+								if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+
+									{
+
+										 datelap = 29;
+
+									}
+
+									else
+
+									{
+
+										datelap = 28;
+
+									}
+
+							
+
+				if(dd >0 && dd<=datelap)
+
+							{						
+
+						jQuery('#errordob').html('');
+
+								jQuery('#errordob').hide();
+
+								return true;
+
+							}
+
+						else
+
+							{
+
+								
+
+								jQuery('#errordob').html('*please check the date again');
+
+								jQuery('#errordob').show();
+
+								document.getElementById('dob_dd').value = '';
+
+								document.getElementById('dob_dd').focus();
+
+								return false;
+
+							}
+
+				}
+
+			else
+
+				{
+
+						if(dd >0 && dd<=30)
+
+							{
+
+							
+
+								jQuery('#errordob').html('');
+
+								jQuery('#errordob').hide();
+
+								return true;
+
+							}
+
+						else
+
+							{
+
+								jQuery('#errordob').html('*please check the date');
+
+								jQuery('#errordob').show();
+
+								
+
+								document.getElementById('dob_dd').value = '';
+
+								document.getElementById('dob_dd').focus();
+
+								return false;
+
+							}
+
+				}
+
+		}
+
+		
+
+		function checkhoursvalid(){
+
+										var time_birth_hr = document.getElementById('time_birth_hr').value;
+
+										if(time_birth_hr >= 0 && time_birth_hr <= 24 && time_birth_hr != '')
+
+											{
+
+											
+
+												jQuery('#errortime_birth').html('');
+
+												jQuery('#errortime_birth').hide();
+
+											return true;
+
+											}
+
+											else
+
+											{
+
+												
+
+												jQuery('#errortime_birth').html('Please enter between hours 0 - 24');
+
+												jQuery('#errortime_birth').show();
+
+												document.getElementById('time_birth_hr').value = '';
+								window.setTimeout(function ()
+
+															{
+
+								document.getElementById('time_birth_hr').focus();
+
+								}, 0);
+												
+
+											}
+
+		}
+
+		
+
+		function checkminsvalid(){
+
+										var time_birth_min = document.getElementById('time_birth_min').value;
+
+										if(time_birth_min >= 0 && time_birth_min <= 60)
+
+											{
+
+											
+
+												//jQuery('#errortime_birth').html('');
+
+												//jQuery('#errortime_birth').hide();
+
+											return true;
+
+											}
+
+											else
+
+											{
+
+												
+
+												jQuery('#errortime_birth').html('Please enter minutes between 0 - 59');
+
+												jQuery('#errortime_birth').show();
+
+												document.getElementById('time_birth_min').value = '';
+								window.setTimeout(function (){
+
+								document.getElementById('time_birth_min').focus();
+
+								}, 0);
+								
+												
+
+											}
+
+
+
+		}
+
+		
+
+		function checkplacedob()
+
+				{
+
+						var place_dob = document.getElementById('place_dob').value;
+
+						var city = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/;
+
+						if(place_dob.match(city))  
+
+						 {  
+
+							jQuery('#errortime_place_dob').html('');
+
+							jQuery('#errortime_place_dob').hide();
+
+							return true;  
+
+						 }  
+
+						else
+
+						 {
+
+							//jQuery('#errortime_place_dob').html('Please check the name of the city');
+
+							//jQuery('#errortime_place_dob').show();
+
+							return false;
+
+						 }
+
+						
+
+				}
+
+		function validateEmail()
+
+				{
+
+						var email = document.getElementById('email').value;
+
+						var re = /^[a-zA-Z]/;
+
+						if(re.test(email))
+
+							{
+
+							return true;
+
+							}
+
+						else
+
+							{
+							return true;
+							jQuery('#email_error').show();
+							jQuery('#email_error').html('Please check the email again');
+							jQuery('#email').val('');
+							
+
+							
+window.setTimeout(function (){
+
+								document.getElementById('email').focus();
+
+								}, 0);
+								
+												
+
+											
+
+							
+
+							return false;
+							
+
+							}
+
+				}
+
+	</script>
+<script>
+
+   jQuery('.carousel').carousel({
+
+    interval: false
+
+}); 
+
+function validateDD(inputids)
+
+	{
+
+	
+
+		if(inputids == 'dob_yyyy')
+
+			{
+
+			 if(document.getElementById('dob_yyyy').value == '')
+
+				{
+					jQuery('#errordob').html('Please enter the year of birth');
+					jQuery('#errordob').show();
+					document.getElementById('dob_yyyy').value = "";
+
+									window.setTimeout(function ()
+
+									{
+
+										document.getElementById('dob_yyyy').focus();
+
+									}, 0);
+
+					return false;
+				}
+			   else if(document.getElementById('dob_yyyy').value < 1600 || document.getElementById('dob_yyyy').value > 2100)
+				{
+							jQuery('#errordob').html('*please enter year between 1800-2100');
+					jQuery('#errordob').show();
+					document.getElementById('dob_yyyy').value = "";
+
+									window.setTimeout(function ()
+
+									{
+
+										document.getElementById('dob_yyyy').focus();
+
+									}, 0);
+
+					return false;
+
+				}
+				{
+					
+				}
+
+			
+
+			}
+
+		if(inputids == 'dob_mm')
+
+			{
+			if(document.getElementById('dob_yyyy').value != '')
+				{
+
+				if(document.getElementById('dob_mm').value == '')
+
+					{
+						
+										jQuery('#errordob').html('Please enter the month of birth');
+
+										jQuery('#errordob').show();
+
+										 document.getElementById('dob_mm').value = "";
+
+											window.setTimeout(function ()
+
+											{
+
+												document.getElementById('dob_mm').focus();
+
+											}, 0);
+
+										return false;
+							
+
+
+					}
+
+				else if(jQuery('#dob_mm').val() < 0 || jQuery('#dob_mm').val() > 12)
+
+					{
+
+						jQuery('#errordob').html('Please enter the month between 1-12');
+
+						jQuery('#errordob').show();
+
+						 document.getElementById('dob_mm').value = "";
+
+							window.setTimeout(function ()
+
+							{
+
+								document.getElementById('dob_mm').focus();
+
+							}, 0);
+
+						return false;
+
+					}
+			
+			}
+}
+			
+
+			
+
+	}
+
+   </script>
+<script>
+		function checkcity(divid)
+			{
+				jQuery("#city_"+divid).css('background','#ffffff');
+				var html = jQuery("#city_"+divid).html();
+				jQuery("#place_dob").val(html);
+				jQuery("#place_dob1").val(jQuery('#city_hidden_'+divid).val());
+			}
+		function checkcity1(divid)
+			{
+				jQuery("#city_"+divid).css('background','#cccccc');
+			}
+		function donecity(divid)
+			{
+				jQuery("#listed_city").hide();
+				nextSlide();
+			}
+
+var wage = document.getElementById("customer_name");
+wage.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        if(checkvalidate('customer_name'))
+			{
+			jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;
+			
+			}
+    }
+});
+
+var wage = document.getElementById("time_birth_min");
+wage.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        if(checkminsvalid())
+			{
+			jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;	
+			}
+    }
+});
+
+
+
+
+var wage = document.getElementById("dob_dd");
+wage.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        if(checkdaysvalid())
+			{
+			jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;
+			
+			}
+    }
+});
+
+
+var wage = document.getElementById("place_dob");
+wage.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        if(checkplacedob())
+			{
+			//jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;	
+			}
+    }
+});
+
+
+var wage = document.getElementById("email");
+wage.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        if(validateEmail())
+			{
+			jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;	
+			}
+    }
+});
+jQuery(document).ready(function(){
+		jQuery('.next1').click(function(){
+				var stepC = document.getElementById('stepid').value;
+				console.log(stepC);
+				if(stepC == 0)
+					{
+			if(checkvalidate('customer_name'))
+			{
+			jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;
+			
+			}
+}			
+			else if(stepC == 1)
+					{
+			if(checkdaysvalid())
+			{
+
+			jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;
+			
+			}
+				}
+			else if(stepC == 2)
+					{
+		if(checkminsvalid())
+			{
+			jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;	
+			}	
+				}
+
+else if(stepC == 3)
+					{
+
+						return false;
+						
+					}
+
+				
+			else
+				{
+				  if(validateEmail())
+					{
+					jQuery('.show').trigger('click');
+			var stepC = document.getElementById('stepid').value;
+			var valStep = parseInt(stepC)+parseInt(1);
+			document.getElementById('stepid').value = valStep;	
+					}
+				}
+				
+		});
+});
+function needfullstory()
+	{
+	   				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/postemailtostory.php?email_address='+document.getElementById('email_story').value,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										jQuery('.bottom-email').html('Stay tuned :)');
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+	}
+	
+	function have_question()
+		{
+			window.location.href = 'https://www.farfaraway.co/ask';
+			jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/havequestion.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										jQuery('#question-inner').html(data);
+										jQuery('#question-outer').show(800);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+			
+		}
+		
+		function savequestions()
+			{
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savequestions.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#ques_form').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#questionc-mess').html('<p class="thanks">Thanks for your question</p>');
+									setTimeout(function(){ 
+
+
+
+									jQuery('#question-outer').hide();
+
+
+
+									 }, 2000);
+		
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+			}
+			function close_p()
+				{
+					jQuery('#question-outer').hide(800);
+				}
+				
+				function showdiv()
+					{
+						jQuery('#how-outer').show(800);
+					}
+				function close_h()
+					{
+						jQuery('#how-outer').hide(800);
+					}
+					
+	</script>
+<input type="hidden" id="stepid" value="0"/>
+<div class="question-outer" id="question-outer" style="display:none">
+  <div class="container qusetion-pop" id="question-inner"> </div>
+</div>
+<div class="question-outer" id="how-outer" style="display:none">
+  <div class="container qusetion-pop" id="how-inner">
+    <div class="row"> <span onClick="close_h();">X</span>
+      <div class="col-lg-12">
+        <div class="col-lg-12">
+          <iframe width="750" height="410px" src="https://www.youtube.com/embed/PUlvgp4Gpr8?version=3;rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script>
+jQuery(document).ready(function(){
+
+		jQuery('#faq_plus').click(function(){
+						jQuery('#faq_plus').removeClass('visible');
+						jQuery('#faq_plus').addClass('hide');
+						jQuery('#faq_mins').removeClass('hide');
+						jQuery('#faq_mins').addClass('visible');
+			
+		});
+	
+		jQuery('#faq_mins').click(function(){
+jQuery('#faq_mins').removeClass('visible');
+						jQuery('#faq_mins').addClass('hide');
+						jQuery('#faq_plus').removeClass('hide');
+						jQuery('#faq_plus').addClass('visible');
+		});
+	jQuery('#logout').click(function(){
+
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/logout.php',
+									dataType: 'text',
+									success: function( data, textStatus, jQxhr ){
+										window.location.href= 'https://www.farfaraway.co/';
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+								});
+
+	});
+	
+	jQuery('#refersh_story').click(function(){
+				/*jQuery.ajax({
+									url: 'https://www.farfaraway.co/refersh_user.php',
+									dataType: 'text',
+									success: function( data, textStatus, jQxhr ){
+										window.location.href= 'https://www.farfaraway.co/now';
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+							});*/
+							jQuery('#errorm').fadeIn(1000);
+							
+	});
+	jQuery('#check_story').click(function(){
+			jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									cron_recording();
+									jQuery('#checkuser_details').hide();
+									jQuery('#story_ids_11').fadeIn(1000);
+									jQuery('#pos_planet_mess_11').fadeIn(1000);									
+									jQuery('#story_ids_11').html('All set :)');		
+									jQuery('#pos_planet_mess_11').html('Sit back, relax, have a cup of coffee </br> and enjoy your story');	
+						
+									getgoodtime();
+										
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+	});
+});
+function cron_recording()
+					{
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/cronentry.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+function prevSlide(){
+	var slideIndex = document.getElementById('slide_n').value;
+	if(slideIndex > 1){
+	var slideIndex1 = parseInt(slideIndex)-parseInt(1);
+	
+	if(slideIndex1 == 4){
+		
+			jQuery('#listed_city1').html('<div class="listed_city" id="listed_city" style="display:none;"></div>');
+		checkcityAPI();
+		jQuery('#next-slide').hide();
+		}
+	else
+		{
+		jQuery('#next-slide').fadeIn(1000);
+		}
+	if(slideIndex1 == 3)
+		{
+		
+		jQuery('#listed_city').remove();
+		}
+	 var pL = document.getElementById('next_meter').value;
+
+		var leftM = parseInt(pL) - parseInt(20);
+		document.getElementById('next_meter').value = leftM;
+	jQuery( "#fifth_line" ).animate({
+			paddingLeft:leftM+'%'
+		  }, 1000, function() {
+			// Animation complete.
+		  });	
+		
+	if(slideIndex1 == 1){
+	jQuery('#prev-slide').hide();
+	}
+	//jQuery('#next-slide').fadeIn(1000);
+	document.getElementById('slide_n').value = slideIndex1;
+	jQuery('#slide'+slideIndex).hide();
+	jQuery('#slide'+slideIndex1).fadeIn(1000);
+	}
+}
+function nextSlide()
+{
+	var slideIndex = document.getElementById('slide_n').value;
+	jQuery('#prev-slide').fadeIn(1000);
+	if(validateform(slideIndex)){
+			var slideIndex1 = parseInt(slideIndex)+parseInt(1);
+		var leftM = parseInt(20)*parseInt(slideIndex);
+
+	if(slideIndex < 5){
+		var slideIndex1 = parseInt(slideIndex)+parseInt(1);
+		var leftM = parseInt(20)*parseInt(slideIndex);
+		document.getElementById('next_meter').value = leftM;
+		 jQuery( "#fifth_line" ).animate({
+			paddingLeft:leftM+'%'
+		  }, 1000, function() {
+			// Animation complete.
+		  });	
+		
+		if(slideIndex1 == 4){
+			
+				jQuery('#listed_city1').html('<div class="listed_city" id="listed_city" style="display:none;"></div>');
+	checkcityAPI();
+			jQuery('#next-slide').hide();
+		}
+		else if(slideIndex1 == 5)
+			{
+			jQuery('#listed_city').remove();
+						jQuery('#next-slide').fadeIn(1000);
+			}
+		else
+		{
+			
+			jQuery( "#fifth_line" ).animate({
+			paddingLeft:leftM+'%'
+		  }, 1000, function() {
+			// Animation complete.
+		  });	
+			jQuery('#next-slide').fadeIn(1000);
+		}
+	document.getElementById('slide_n').value = slideIndex1;
+	jQuery('#slide'+slideIndex).hide();
+	if(slideIndex1 == 2)
+				{
+					jQuery('#slide'+slideIndex1).show();
+				}
+	else	
+				{
+					jQuery('#slide'+slideIndex1).fadeIn(1000);
+				}
+	if(slideIndex1 == 2)
+				{
+				
+				  document.getElementById('dob_yyyy').focus();
+				}
+			else if(slideIndex1 == 3)
+				{
+				  
+				  document.getElementById('time_birth_hr').focus();
+				}
+			else if(slideIndex1 == 4)
+				{
+				 document.getElementById('place_dob').focus();
+				}
+			else if(slideIndex1 == 5)
+				{
+				 document.getElementById('email').focus();
+				}
+		
+	}
+	else
+	{
+							jQuery( "#fifth_line" ).animate({
+								paddingLeft:'90%'
+							  }, 1000, function() {
+								
+							  }); 
+							 jQuery('#theForm').hide();
+
+								jQuery('#story_ids_11').hide();
+								jQuery('#pos_planet_mess_11').hide();
+							/*
+								jQuery('#story_ids').fadeIn(1000);
+								jQuery('#pos_planet_mess').fadeIn(1000);
+							*/	
+									
+							startp(1);
+	}
+}
+}
+			jQuery(document).ready(function(){
+			var wage = document.getElementById("customer_name");
+			wage.addEventListener("keydown", function (e) {
+
+				if (e.keyCode === 13) {
+					
+				   nextSlide();
+				}
+			});
+			var wage = document.getElementById("dob_dd");
+			wage.addEventListener("keydown", function (e) {
+
+				if (e.keyCode === 13) {
+				   nextSlide();
+				}
+			});
+
+			var wage = document.getElementById("time_birth_min");
+			wage.addEventListener("keydown", function (e) {
+
+				if (e.keyCode === 13) {
+				   nextSlide();
+				}
+			});
+
+
+			var wage = document.getElementById("email");
+			wage.addEventListener("keydown", function (e) {
+
+				if (e.keyCode === 13) {
+				   nextSlide();
+				}
+			});
+
+			});
+function validateform(index)
+	{
+	
+		if(index == 1)
+			{
+				if(document.getElementById('customer_name').value == '')
+					{
+						document.getElementById('customer_name').focus();
+						jQuery('#error-msg-'+index).html("*please enter your name");
+						jQuery('#error-msg-'+index).fadeIn(1000);
+						return false;
+					}
+				else
+					{
+						return true;
+					}
+			}
+		else if(index == 2)
+			{
+					var dob_yyyy = document.getElementById('dob_yyyy');	
+					var dob_mm = document.getElementById('dob_mm');	
+					var dob_dd = document.getElementById('dob_dd');
+					if(!allnumeric(dob_yyyy))
+						{
+							dob_yyyy.focus();
+							jQuery("#error-msg-"+index).html("*please enter date in numbers");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!checkyear(dob_yyyy.value))
+						{
+							dob_yyyy.focus();
+							jQuery("#error-msg-"+index).html("*please enter valid year");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!allnumeric(dob_mm))
+						{
+							dob_mm.focus();
+							jQuery("#error-msg-"+index).html("*please enter date in numbers");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!checkmonth(dob_mm.value))
+						{
+							dob_mm.focus();
+							jQuery("#error-msg-"+index).html("*please enter valid month");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!allnumeric(dob_dd))
+						{
+							dob_dd.focus();
+							jQuery("#error-msg-"+index).html("*please enter date in numbers");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!checkdate(dob_dd.value))
+						{
+							dob_dd.focus();
+							jQuery("#error-msg-"+index).html("*please enter valid date");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+
+						}
+					else
+						{
+						 if(jQuery("#dob_yyyy").val().length <4)
+							{
+
+								jQuery("#error-msg-"+index).html("*please check the date of birth again");
+								jQuery("#error-msg-"+index).fadeIn(1000);
+								return false;
+							}
+							else{
+							return true;
+							}
+						}
+							
+			}
+		else if(index == 3)
+			{
+					var time_birth_hr = document.getElementById('time_birth_hr');	
+					var time_birth_min = document.getElementById('time_birth_min');	
+					
+					if(!allnumeric(time_birth_hr))
+						{
+							time_birth_hr.focus();
+							jQuery("#error-msg-"+index).html("*please check your time of birth");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!allnumeric(time_birth_min))
+						{
+							time_birth_min.focus();
+							jQuery("#error-msg-"+index).html("*please check your time of birth");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else
+						{
+						 if(jQuery("#time_birth_hr").val() < 0 || jQuery("#time_birth_hr").val() > 23 )
+							{
+								time_birth_hr.focus();
+								jQuery("#error-msg-"+index).html("*please check your time of birth");
+								jQuery("#error-msg-"+index).fadeIn(1000);
+								return false;
+							}
+						 if(jQuery("#time_birth_min").val() < 0 || jQuery("#time_birth_min").val() > 59 )
+							{
+								time_birth_min.focus();
+								jQuery("#error-msg-"+index).html("*please check your time of birth");
+								jQuery("#error-msg-"+index).fadeIn(1000);
+								return false;
+							}
+
+							else{
+							return true;
+							}
+						}
+							
+			}	
+		else if(index == 5)
+			{
+				//var emaill = document.getElementById('email').value;
+				var emaill1 = document.getElementById('email').value;
+				var emaill2 = emaill1.toLowerCase();
+				
+				var emaill = emaill2.replace(/\s/g,'');
+				document.getElementById('email').value = emaill;
+				if(emaill.includes("@") && emaill.includes("."))
+					{
+						return true;
+					}
+				else
+					{
+						document.getElementById('email').focus();
+						jQuery("#error-msg-"+index).html("*please enter a valid email id");
+						jQuery("#error-msg-"+index).fadeIn(1000);
+						return false;
+					}
+			}
+			else
+			{
+			    return true;
+			}
+	}
+    function allnumeric(inputtxt)  
+       {  
+          var numbers = /^[0-9]+$/;  
+          if(inputtxt.value.match(numbers))  
+          {  
+          return true;  
+          }  
+          else  
+          {  
+          return false;  
+          }  
+       }   
+function checkyear(year)
+		{
+			if(year < 1900 || year > 2020)
+				{
+					return false;
+				}
+			else
+				{
+					return true;
+				}
+		}
+	function checkmonth(month)
+		{
+		
+			if(month <1 || month > 12)
+				{
+				
+					return false;
+				}
+			else
+				{
+				  return true;
+				}
+		}
+	function checkdate(date)
+		{
+				if(date <1 || date >31)
+					{
+					  return false;
+					}
+				else
+					{
+					  return true;
+					}
+		}
+</script>
+<input type="hidden" name="next_meter" id="next_meter" value="0"/>

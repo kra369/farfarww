@@ -1,0 +1,4967 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="alternate" href="index.html" hreflang="en" />
+<head>
+<link rel="icon" href="https://www.farfaraway.co/img/favicon.png" type="img/favicon-icon"/>
+<style>.intro { height:100% !important; }
+#intro_bg { height:100% !important; }
+.intro-body { display:block !important; }
+
+#top_type { display:none; }
+.carousel.slide .item:nth-child(7) .container .table-responsive {
+
+    height: 450px !important;
+
+}
+
+
+</style>
+<style>.set { height:0px; }
+</style>
+<meta charset="utf-8">
+<meta https-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Farfarway is a web application based on Vedic Astrology. It would draw your birth chart based on your date, time, and place of birth. It would describe your personality, career direction, attributes of the spouse, etc. based on your birth chart.">
+<meta name="author" content="">
+<meta name="robots" content="INDEX">
+<meta property="og:image" content="https://www.farfaraway.co/img/cover.jpg" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/stepsForm.js"></script>
+<title>Farfaraway | The coolest astrology website on the planet</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/indexstyle2020.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/grayscale.css" rel="stylesheet">
+<link href="css/component.css" rel="stylesheet">
+<link href="css/demo.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker-standalone.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>*{ outline:none !important;}
+td { color: #fff; font-family: courier_newregular; font-size: 12px; }
+body {  background:  none repeat scroll 0 0;
+}
+.outerpart {  background:  none repeat scroll 0 0 !important;
+}
+.slide-title {    display: block;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 3px;
+    letter-spacing: 0px;
+    font-family: courier_newregular;
+    font-weight: 700;
+}
+.slide-content {
+    display: block;
+    width: 100%;
+	    background: rgba(204, 204, 204, 0.5);
+}
+.slide {
+    margin: 0 auto;
+    padding-top: 0px;
+    width: 90%;
+}
+.slide-text {height: 28px;
+    width: 100%;
+    padding: 5px;
+    background: none;
+    border: none;
+}
+.slide-text input{height: 28px;
+    width: 100%;
+    padding: 0 10px;
+    background: none;
+    border: none;
+}
+#slide2 input, #hour input{ width:20%;    text-align: center;   }
+
+.prev-slide > a {
+    float: left;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.next-slide > a {
+    float: right;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+}
+.next-slide > a:hover, .next-slide > a:active, .next-slide > a:focus{    border: none;
+    background: transparent;}
+	
+.slide p{margin: 0;
+    font-family: latoregular;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0;}
+.arrow{ width: 100%;
+    float: left;
+    margin: 0;}
+.left-content{    float: left;
+    padding: 5px 0;
+    font-size: 10px;
+    letter-spacing: 1px;}
+.right-content{     float: right;
+    padding: 5px 0;
+    font-size: 8px !important;
+    letter-spacing: 1px !important;}
+.under-line{   height: 4px;
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;}	
+.first-line{    height: 4px;
+    background: grey;
+    width: 20%;}
+.second-line{  height: 4px;
+    background: grey;
+    width: 40%;}
+.third-line{  height: 4px;
+    background: grey;
+    width: 60%;}
+.fourth-line{  height: 4px;
+    background: grey;
+    width: 80%;}
+.fifth-line{  height: 4px;
+    background: grey;
+	position:absolute;
+	 }
+	 
+.prev-slide{    position: absolute;
+    left: 0;
+    top: 28px;
+    font-family: lato;
+    font-size: 21px;
+}	
+.prev-slide > a:hover, .prev-slide > a:focus, .prev-slide > a:active{    border: none;
+    background: transparent;}
+.next-slide{    
+		position: absolute;
+		right: 0;
+		top: 28px;
+		font-family: lato;
+		font-size: 21px;
+}
+.error-msg{    
+		color: red !important;
+		width: 100%;
+		float: left;
+		text-align: left !important;
+		display:none;
+	}	
+.slide-content span{ font-weight:bold;color: #fff;
+    opacity: .8;}					
+
+</style>
+<script>
+function switch1(){
+jQuery('#intro_bg').css('height','0px');
+
+jQuery('#footer2').hide();
+}
+function hideland()
+	{
+	jQuery('.intro').css('height','100%');
+	jQuery('#intro_bg').css('height','100%');
+jQuery('.intro-body').show();
+jQuery('#story').show();
+
+	jQuery('#top_type').hide();
+	  jQuery('#innerpart').hide();
+  jQuery( "#outerpart" ).animate({
+			height: '0%',
+		  }, 0, function() {
+			jQuery('#top_type').show();
+		    jQuery('#top_type').addClass('top_type');
+		jQuery('#top_type').show();
+	setTimeout(function(){ 
+	showsomethings();
+	 }, 3500);
+		// Animation complete.
+		});
+ /*jQuery( "#outerpart" ).fadeOut(1000);
+jQuery('#top_type').addClass('top_type');
+		jQuery('#top_type').fadeIn(1000);
+	setTimeout(function(){ 
+	showsomethings();
+	 }, 5000);
+*/
+	}
+function showsomethings(){
+	jQuery('#read').fadeIn(1000);
+	jQuery('#did-you-know').fadeIn();
+	setTimeout(function(){ 
+	showsomethingsArrow();
+	 }, 1000);
+}
+function showsomethingsArrow()
+	{
+		jQuery('#arrow').show(1000);
+	}
+</script>
+<!-- Facebook Pixel Code -->
+
+<!-- End Facebook Pixel Code -->
+</head>
+
+
+<!-- Tracker -->
+<!-- End - Tracker -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onLoad="hideland();">
+<a href="mystory.html">
+<div class="our-story">
+<div class="our-story-inner1">
+ <p>MY STORY</p>
+ </div>
+</div>
+</a>
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"> <img src="https://www.farfaraway.co/img/farfarawaylogo1.svg"> </a>       <ul class="goodtimes-class match-one main about-top" id="match_class" style="">
+  <li> <a class="page-scroll about-class1" href="mystory.html">MY STORY</a> </li>
+  </ul></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<div class="outerpart" id="outerpart" style="display:none">
+  <div class="innerpart" id="innerpart" ></div>
+</div>
+<!-- Intro Header -->
+<div class="whole-div" >
+  <div id="whole_div">
+	<header class="intro">
+  	   <ul class="match_class main" id="match_class">
+      <li class="match" id="login"><a href="login.html"><img src="https://www.farfaraway.co/img/login-icon.png" border="0"></a>
+      <p id="login-click" style="display:none;">LOGIN</p>
+      <script>
+	  jQuery(document).ready(function(){
+	  $("#login").mouseenter(function(){
+    $("#login-click").fadeIn();
+});
+$("#login").mouseleave(function(){
+    $("#login-click").fadeOut();
+});
+});
+	  </script>
+      </li>
+
+    </ul>
+    <div>
+    
+    <ul class="nav navbar-nav" id="more-fe" style="display:none;">
+        
+        <li class="hidden"> <a href="#page-top"></a> </li>
+        <li> <a class="page-scroll" href="superuser.html" style = "margin: 0 0 20px 0;">become a SUPERUSER</a></li><span style="    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    margin: 0px;
+    font-family: latoregular;
+    position: absolute;
+    margin-left:68px;
+    color: #000;
+    margin-top: 22px;">paid consultation</span>
+			<li> <a class="page-scroll" href="blog/index.html">BLOG</a> </li>
+				<li> <a class ="page-scroll" href="https://www.youtube.com/c/farfarawaydotco" target="_blank"><i class="fa fa-youtube" aria-hidden="true" style="font-size:21px;padding-top:10px;margin-right: 5px;"></i></a><a class="page-scroll" href="https://www.youtube.com/c/farfarawaydotco"> YOUTUBE</a></li>
+        
+      </ul>
+      <script>
+	  jQuery(document).ready(function(){
+			jQuery('#more-feature-anc12').click(function(){
+			
+			jQuery("#top-icon").trigger("click");
+			});
+	  });
+	  </script>
+      
+	  
+      </div>
+        <ul class="top-icon-ul">
+		<li class="top-icon-li">
+			<a href="javascript:void(0);" class="c-hamburger">
+					More Feature
+			</a>
+		</li>
+	</ul>   
+    <ul class="top-icon-ul">
+    <li class="top-icon-li">
+     <button class="c-hamburger c-hamburger--htx" id="top-icon">
+          <span>toggle menu</span>
+        </button>
+
+      <ul class="nav navbar-nav" id="nav" style="display:none;">
+        <script>
+  (function() {
+    "use strict";
+    var toggles = document.querySelectorAll(".c-hamburger");
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+  })();
+</script>
+        <li class="hidden"> <a href="#page-top"></a> </li>
+        <li> <a class="page-scroll" href="superuser.html" style = "margin: 0 0 20px 0;" id="super">become a SUPERUSER</a></li><span class ="paid">paid consultation</span>
+		
+			
+		
+		<li> <a class="page-scroll" href="blog/index.html">BLOG</a> </li>
+				<li> <a href="https://www.youtube.com/c/farfarawaydotco" style="border:none;"><i class="fa fa-youtube" aria-hidden="true" style="font-size:21px;padding-top:10px;margin-right: 5px;color:#000;"></i></a><a class ="page-scroll" href="https://www.youtube.com/c/farfarawaydotco" target="_blank"></a><a class="page-scroll" href="https://www.youtube.com/c/farfarawaydotco"> YOUTUBE</a></li>
+        
+        
+        
+      </ul>
+    </li>
+    </ul>
+    <script>
+	jQuery(document).ready(function(){
+	jQuery('#top-icon').click(function(){
+		jQuery('#nav').fadeToggle();						   
+									   });						   
+							   });
+	</script>
+    <img src="https://www.farfaraway.co/img/intro-bg.jpg" class="img-responsive" id="intro_bg" > 
+	</header>
+  </div>
+	
+  <div class="intro-body" style="display:none;">
+    <p class="logo-block"> <img src="https://www.farfaraway.co/img/farfarawaylogo.svg"></p>
+    <div id="did-show">
+	    <p id="did-you-know" style="display:none;"><span class="highlight-font">438,662</span> stories told, read yours...</p>
+    </div>
+    <p class="col-md-offset-5 index" id="top_type">THIS IS A STORY ABOUT YOU<span class="top_type_span">|</span></p>
+      
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 top_logo">
+          <p class="header_button" id="read" style="display:none;"><a href="#story" class="btn btn-default btn-lg page-scroll click_down" style="margin-bottom:-10px;">READ</a></p>
+          <p class="top-button"><a href="#story" class="btn btn-circle page-scroll click_down" style="display:none;" id="arrow"> <i class="fa fa-angle-down animated"></i> </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</div>
+<a href="superuser.html" >
+<div class="chat-pop" id="chat-pop" style="display:none;">
+
+ <div class="pop-cont-div" id="pop-cont-div" style="display:none;">
+  <p class="pop-cont-first" style="font-size:12px;">level up?</p>
+  <p class="pop-cont">1</p>
+  </div>
+  <div class="top-link-index">
+ <a href="superuser.html">
+ <span class="top-link-first">level up</span><span style="font-family:latoregular; font-size:11px; font-weight:bold;"> +</span><br>
+ </a>
+</div>
+</div>
+</a>
+
+
+<!-- About Section -->
+<div class="starfield" id="story" style="display:none;">
+  <div class="container-fluid your_story">
+    <!--<img src="img/intro-bg.png" class="img-responsive">-->
+    	
+	<div class="row">
+      <h2 id="story_ids">your story</h2>
+      <p id="pos_planet_mess"><span style="font-size:13px;"><span style="letter-spacing:-1px;">...</span>will be based on your birth details.</span><br>
+        <span style ="font-size:11px;font-family:latoregular;text-transform:none;font-weight:500;">So, please enter the following details carefully.</span></p>
+		<div class="pre-mess" id="pre_mess" style="display:none;">Would you like to save your details?</div>
+		<div class="pre-mess-opt" id="pre_mess_opt" style="display:none;"><span class="opt-yes"><a href="javascript:void(0);" onClick="startp('1');">Yes</a></span><span class="opt-no"><a href="javascript:void(0);" onClick="startp(0);">No</a></span></div>
+   <div class="row" id="new-member-inner" style="display:none;">
+    <h2 id="story_ids">registration</h2>
+	<p class="save_account">Your details will be saved in your account</p>
+      <!-- login form -->
+      <p class="error-reg" id="error_reg" style="display:none;"></p>
+	  <section class="loginform cf">
+		<form name="resgisterUser" id="resgisterUser" method="post" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail">Email</label>
+					<input type="email" name="usermail" id="usermail_r" placeholder="e.g. yourname@email.com" required>
+				</li>
+				<li>
+					<label for="password">Password (4 digit pin)</label>
+					<input type="password" name="password" id="password" placeholder="e.g. 1234" maxlength="4" required></li>
+                    <li>
+					<label for="password">Confirm Password</label>
+					<input type="password" name="c_password" id="c_password" placeholder="e.g. 1234" maxlength="4" required></li>
+				<li class="button">
+					<input type="button" value="Register" onClick="resUser();">
+				</li>
+			</ul>
+		</form>
+		<div class="forget_linkre" style="display:none"><a href="javascript:void(0);" id="forget_linkr">Forgotten password</a></div>
+	</section>
+	      <!-- login form -->
+    </div>
+ 
+		<div class="row" id="existing-member-inner" style="display:none;">
+			 
+    <h2 id="story_ids" style="line-height:12px;"> Please login&nbsp;<br><span class="font-change"><br/>Password has been sent to your email</span>
+	
+	 </h2>
+    
+	
+	    <span class="mess_l_2" id="mess_l_2" style="display:none;"></span>
+		<span class="mess_l_3" id="mess_l_3" style="display:none;"></span>
+    
+	<!-- login form -->
+      
+	  <section class="loginform cf">
+		
+		<form name="loginUser" id="loginUser" method="post" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail" style="margin-top:15px;">Email</label>
+					<input type="email" name="usermail" id="usermaillogin" value="" required>
+				</li>
+				<li>
+					<label for="password">Password (4 digit pin)</label>
+					<input type="password" name="password" id="passuserl" placeholder="e.g 1234" maxlength="4" required>
+				</li>    
+				<li class="button">
+					<input type="button" value="Login" onClick="login_direct();">
+				</li>
+			</ul>
+            <span id="error_log" style="display:none;"></span>
+		</form>
+		<div class="forget_link" ><a href="javascript:void(0);" id="forget_link" onClick="forget_direct();">Forgotten password</a></div>
+		<div class="newuser_link" ><a href="javascript:void(0);" id="new_link" style="display:none;">New User</a></div>
+	</section>
+	      <!-- login form -->
+    </div>
+	  <section>
+	    	
+
+        <form id="theForm" class="simform" method= "post" autocomplete="off">
+					<div class="outerWrapper">
+							<div class="innerWrapper">
+								<div class="slide" id="slide1">
+									<span class="slide-title">
+										Your name
+									</span>	
+									<span class="slide-content">
+										<input type="text" name="customer_name" id="customer_name" TABINDEX="1" placeholder="Please type here" class="slide-text"/> 
+										
+									</span>
+									
+									<p class="right-content">1/5</p>
+									<p class="error-msg" id="error-msg-1">*error message</p>
+									
+								</div>
+							
+								<div class="slide" id="slide2" style="display:none">
+									<span class="slide-title">
+										Date of birth
+									</span>	
+									<span class="slide-content">
+                                    <input type="text" name="dob_yyyy" id="dob_yyyy" placeholder="YYYY" class="year" maxlength="4" TABINDEX="2" size="4"/>
+									
+                                    
+                                    <span>/</span>
+									<input type="text" name="dob_mm" id="dob_mm" placeholder="MM" size="2" maxlength="2" class="month"  TABINDEX="3"/>
+                                    
+                                    <span>/</span>
+                                    <input type="text" name="dob_dd" id="dob_dd" placeholder="DD"  maxlength="2" class="date" size="2" maxlength="2"   TABINDEX="4"/>
+											
+										
+										</span>
+																				
+										
+										<p class="left-content">e.g. enter 1990 04 13 for 13th April 1990 </p>
+										<p class="right-content">2/5</p>
+										<p class="error-msg" id="error-msg-2">*error message</p>
+										
+								</div>
+								
+								<div class="slide" id="slide3" style="display:none">
+
+									<span class="slide-title">
+										Time of birth
+									</span>	
+									<span class="slide-content" id="hour">
+										<input id="time_birth_hr" name="time_birth_hr" type="text" placeholder="HR" maxlength="2" TABINDEX="5" >		
+                                         <span>/</span>	
+										<input id="time_birth_min" name="time_birth_min" type="text" placeholder="MIN" maxlength="2"  TABINDEX="6" >	
+									</span>
+									
+									
+									 <p class="left-content">e.g enter 21 32 for 9 32 pm </p>
+									 <p class="right-content">3/5</p>
+									 <p class="error-msg" id="error-msg-3">*error message</p>
+                                     <div class="extra-cont">
+                                     <p>Fetching planetary positions from <br><span class="highlight-font">NASA</span></p>	
+                                     </div>
+								</div>
+								
+								<div class="slide" id="slide4" style="display:none">
+
+									<span class="slide-title">
+										Place of birth
+									</span>	
+									<span class="slide-content">
+										  <input id="place_dob" name="place_dob" type="text" placeholder="Please start typing your place of birth" onBlur="checkplacedob();" onKeyUp="checkcityAPI();" TABINDEX="7" >
+										  <input id="place_dob1" name="place_dob1" type="hidden">
+										
+									</span>
+									
+									
+									<p class="right-content">4/5</p>
+									<p class="error-msg" id="error-msg-4">*error message</p>
+                                    <div class="extra-cont">
+                                     <p>Fetching Latitude and Longitude using <br><span class="highlight-font">Google maps</span></p>	
+                                     </div>
+								</div>
+								
+								<div class="slide" id="slide5" style="display:none">
+
+									<span class="slide-title">
+										Your email
+									</span>	
+									<span class="slide-content">
+									  <input id="email" name="email" type="text" placeholder="Please type here" onBlur="validateEmail();" TABINDEX="8" placeholder="please type here" value="">
+                	
+									</span>
+									
+									
+									
+									<p class="right-content">5/5</p>
+									<p class="error-msg" id="error-msg-5">*error message</p>
+                                    <div class="extra-cont">
+                                     <p>Creating your story based on <br><span class="highlight-font">Vedic Astrology</span></p>	
+                                     </div>
+								</div>
+								<div id="listed_city1">
+								<div class="listed_city" id="listed_city" style="display:none;"></div>
+								</div>
+								<span class="prev-slide" id="prev-slide" style="display:none;"><a href="javascript:void(0);" onClick="prevSlide();"> < </a></span>
+								<span class="next-slide" id="next-slide"><a href="javascript:void(0);" onClick="nextSlide();"> > </a></span>
+								<p class="arrow">
+								</p>
+                                <div class="under-line">
+									<p class="fifth-line" id="fifth_line" style="padding-left: 0%;"></p>
+									</div>
+							</div>
+						</div>
+						<input type="hidden" name="slide_n" id="slide_n" value="1"/>
+
+        </form>
+        
+		<!-- /simform -->
+        <a href="#chart" id="chartpress" class="page-scroll click_down"></a> </section>
+    </div>
+	  </div>
+</div>
+<style>.btn-catalog a{ 
+	padding: 7px 18px 7px 15px;
+	background: #e3e3e3;
+	color: #5f5f5f;
+	font-weight: bold;
+	margin:5px;
+}
+.btn-catalog{ 
+	margin:10px;
+}
+</style>
+<section id="chart" style="display:none;">
+  <div id="moreinfo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#moreinfo" data-slide-to="0" class="active"></li>
+      <li data-target="#moreinfo" data-slide-to="1"></li>
+      <li data-target="#moreinfo" data-slide-to="2"></li>
+      <li data-target="#moreinfo" data-slide-to="3"></li>
+      <li data-target="#moreinfo" data-slide-to="4"></li>
+      <li data-target="#moreinfo" data-slide-to="5"></li>
+      <li data-target="#moreinfo" data-slide-to="6"></li>
+      <li data-target="#moreinfo" data-slide-to="7"></li>
+      <li data-target="#moreinfo" data-slide-to="8"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h2>Your birth chart</h2>
+        <p class="slider-semi-header">The birth chart is calculated using Swiss Ephemeris.<br> Click on the following buttons to know more:</p>
+		<a id="lords" class="topofchart" href="javascript:void(0);" onclick="degree_lord();" >Lords</a>  <a id="aspects" class="topofchart" href="javascript:void(0);" onclick="degree_aspects();" >Aspects</a> <a id="degrees" class="topofchart" href="javascript:void(0);" onclick="degree_birth();" >Degrees</a>
+        <div class="gif"><img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c1"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+
+	  	       <div class="item">
+        <div class="container">
+          <h2>Your birth chart <div style="font-size:14px; text-transform:none;">(in tabular form)...</div></h2>
+    
+          <div class="table-responsive" id="table20"> </div>
+		  
+		  
+
+
+
+                    <p class="birth-tubular-right"></p>
+          <p class="birth-tubular-left"></p>
+                  </div>
+      </div>
+	  
+	   <div class="item">
+        <div class="container">
+          <h2>Nakshatra <div style="font-size:14px; text-transform:none;">based analysis...</div></h2>
+		  <span style="margin-bottom:20px;">
+		  <a id="career" class="topofchart" href="javascript:void(0);" onclick="career_table();" >Career</a> <a id="marriage" class="topofchart" href="javascript:void(0);" onclick="marriage_table();" >Marriage</a> 
+		  <a id="personality" class="topofchart" href="javascript:void(0);" onclick="personality();" >Personality</a>
+		  <a id="all_planets" class="topofchart" href="javascript:void(0);" onclick="all_table();" >All planets</a>
+			</span>
+          <div class="table-responsive" id="table21" style="margin-top:10px;"> </div>
+		  
+
+                    <p class="birth-tubular-right"></p>
+          <p class="birth-tubular-left"></p>
+                  </div>
+      </div>
+	       
+	   <!-- D9 chart-->
+	   <div class="item">
+        <h2>THE D-9 CHART...</h2>
+       <p class="slider-semi-header">This chart is also known as the "Navamsa". This chart determines the characteristics of your spouse.<br>The lords of the main birth chart are also shown in this chart.<br><span style="font-size: 10px;font-family:latoregular;letter-spacing:0.5px;font-weight: 100;">(please read this chart alongside the main birth chart)</span></p>
+	   
+	   			 <a href="javascript:void(0);" onclick="c1_d9_creation();" id="chart_genrate_d9_btn" class="generate-btn"/>Generate Chart</a>
+				   
+	   
+	   
+		<div class="gif" id="d9_genrate" style="display:none;">
+		<img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d9"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	   <!-- done D9 chart-->
+	   
+	  <!-- D10 chart-->
+	 <div class="item">
+        <h2>THE D-10 CHART...</h2>
+        <p class="slider-semi-header">This chart is also known as the "Dasamsa". This chart determines your career direction.<br>The lords of the main birth chart are also shown in this chart.<br><span style="font-size: 10px;font-family:latoregular;letter-spacing:0.5px;font-weight: 100;">(please read this chart alongside the main birth chart)</span></p>
+		
+				  			 <a href="javascript:void(0);" onclick="c1_d10_creation();" id="chart_genrate_d10_btn" class="generate-btn"/>Generate Chart</a>
+					
+		<div class="gif" id="d10_genrate" style="display:none;">
+		<img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d10"/>
+		
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	    <!-- done- D10 chart-->
+		
+		<!-- Start Dashas-->
+
+ <div class="item">
+        <h2>Planetary time periods...</h2>
+        <p class="slider-semi-header">...are the times when the following planets affect you the most.<br>
+         Vedic astrologers call them Dashas. </p>
+        <div class="container-fluid last-table">
+          <!--<span>X</span>
+-->
+          <div class="row" id="dasha"> </div>
+        </div>
+                <p class="planetary-right"></p>
+        <p class="planetary-left"></p>
+              
+	  </div>
+	  
+	  
+
+<div class="item">
+        <h2 style="font-size:15px;">Transits<br><span style="font-size:12px;">for the year 2020</span></h2>
+		
+		 
+	  
+			   
+			 <a href="javascript:void(0);" onclick="generate_transits();" id="chart_genrate_d2_btn" class="generate-btn"/>Generate</a>
+			
+				  
+
+		 
+       <div class="container-fluid" id="transits_background" style="overflow-y:scroll;overflow-x:hidden !important;width:880px;padding:0px;height:500px;background:#fff;margin-top:7px;display:none;">
+          <!--<span>X</span>
+-->
+          <div class="row1" id="transits"> </div>
+        </div>
+
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+ 
+
+	  
+	  	  <div class="item">
+        <h2>THE D-2 CHART...</h2>
+        <p class="slider-semi-header">This chart is also known as Hora<br>
+          "Wealth" is the main aspect studied through this D-chart.</p>
+		  
+		  
+		  			 <a href="javascript:void(0);" onclick="c1_d2_creation();" id="chart_genrate_d2_btn" class="generate-btn"/>Generate Chart</a>
+					 
+        <div class="gif" id="d2_genrate" style="display:none;">
+		<img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d2"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  <!-- D9 chart-->
+	  <div class="item">
+        <h2>THE D-3 CHART...</h2>
+        <p class="slider-semi-header">This chart is also known as Drekkana<br>
+          "Happiness through co-borns" is the main aspect studied through this D-chart. <br>Other aspects include health, and success/failure in initiatives.</p>
+		  			 <a href="javascript:void(0);" onclick="c1_d3_creation();" id="chart_genrate_d3_btn" class="generate-btn"/>Generate Chart</a>
+					
+		
+        <div class="gif" id="d3_genrate" style="display:none;"> <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d3"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  	   <div class="item">
+        <h2>THE D-4 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Chathurthamsa<br>
+          "Happiness at home & Peace of mind" are the main aspects studied through this D-chart. <br>Other aspects include childhood, good fortune, and real-estate.</p>
+	   			 <a href="javascript:void(0);" onclick="c1_d4_creation();" id="chart_genrate_d4_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif" id="d4_genrate" style="display:none;"> <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d4"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  <div class="item">
+        <h2>THE D-7 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Sapthamsa<br>
+          "Happiness through Children, and Grand children" are the main aspects studied through this D-chart.</p>
+		  			 <a href="javascript:void(0);" onclick="c1_d7_creation();" id="chart_genrate_d7_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif" id="d7_genrate" style="display:none;"> <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d7"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  	  <div class="item">
+        <h2>THE D-12 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Dvadasama<br>
+          "Happiness through Parents" is the main aspect studied through this D-chart.</p>
+		  
+		  			 <a href="javascript:void(0);" onclick="c1_d12_creation();" id="chart_genrate_d12_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d12_genrate" style="display:none;"> <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d12"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  	  <div class="item">
+        <h2>THE D-16 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Shodasamsa<br>
+          "Vehicles, Conveyance, and Peace of mind" are the main aspects studied through this D-chart.</p>
+		  			 <a href="javascript:void(0);" onclick="c1_d16_creation();" id="chart_genrate_d16_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif" id="d16_genrate" style="display:none;"> <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d16"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  	  <div class="item">
+        <h2>THE D-20 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Vimsamsa<br>
+          "Spirtual, and Religious beliefs" are the main aspects studied through this D-chart.</p>
+		  			 <a href="javascript:void(0);" onclick="c1_d20_creation();" id="chart_genrate_d20_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d20_genrate" style="display:none;"> <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d20"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  	  <div class="item">
+        <h2>THE D-24 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Chaturvimsamsh<br>
+          "Higher education, Intellect, and Academic chievements" are the main aspects <br>studied through this D-chart.</p>
+		    			 <a href="javascript:void(0);" onclick="c1_d24_creation();" id="chart_genrate_d24_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d24_genrate" style="display:none;">  <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d24"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  	  <div class="item">
+        <h2>THE D-27 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Bhamsha<br>
+          "Physical & Mental - Strengths & Weaknesses" are the main aspects studied through this D-chart.</p>
+		    			 <a href="javascript:void(0);" onclick="c1_d27_creation();" id="chart_genrate_d27_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d27_genrate" style="display:none;">  <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d27"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  	  <div class="item">
+        <h2>THE D-30 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Trimsamsa<br>
+          "Misfortune" is the main aspect studied through this D-chart.</p>
+		   			 <a href="javascript:void(0);" onclick="c1_d30_creation();" id="chart_genrate_d30_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d30_genrate" style="display:none;">  <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d30"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  	  <div class="item">
+        <h2>THE D-40 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Khavedamsha<br>
+          "Luck from mother's side of the family" is the main aspect studied through this D-chart.</p>
+		   			 <a href="javascript:void(0);" onclick="c1_d40_creation();" id="chart_genrate_d40_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d40_genrate" style="display:none;">  <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d40"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  
+	  	  <div class="item">
+        <h2>THE D-45 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Akshvedamsha<br>
+          "Luck from father's side of the family" is the main aspect studied through this D-chart.</p>
+		  			 <a href="javascript:void(0);" onclick="c1_d45_creation();" id="chart_genrate_d45_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d45_genrate" style="display:none;">  <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d45"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+	  	  <div class="item">
+        <h2>THE D-60 CHART...</h2>
+      <p class="slider-semi-header">This chart is also known as Shashtiamsa<br>
+          "All general indications are seen from this D-chart. <br>Some astrologers believe that past-life karmas can also be studied from this D-chart.</p>
+		  			 <a href="javascript:void(0);" onclick="c1_d60_creation();" id="chart_genrate_d60_btn" class="generate-btn"/>Generate Chart</a>
+			        <div class="gif"  id="d60_genrate" style="display:none;">  <img src="https://www.farfaraway.co/img/farfaraway.png" border="0" id="c_d60"/>
+                    <p class="birth-chart-right"></p>
+          <p class="birth-chart-left"></p>
+                  </div>
+      </div>
+	  
+
+      <div class="item">
+        <div class="container third-block">
+          <h2>What do planets represent...</h2>
+          <p class="slider-semi-header">...we all know the 7 planets. Besides them<br>
+            Rahu and Ketu play an important part in Vedic astrology. They represent the North and South node of the Moon.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Planet</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Sun</td>
+                  <td>Soul, Career, Father, Govt, and Authority</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Moon</td>
+                  <td>Mind, Emotions, and Mother</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Mercury</td>
+                  <td>Intelligence, and Communication skills</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Venus</td>
+                  <td>Creativity, Luxuries, and Wife</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Mars</td>
+                  <td>Courage, Willpower, and Passion</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Jupiter</td>
+                  <td>Teachers, Knowledge, Guidance, and Husband</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Saturn</td>
+                  <td>Discipline, Delay, Order, and Hard work</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Rahu</td>
+                  <td>Obsession, and Aggression</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Ketu</td>
+                  <td>Detachment, Isolation, and Spirituality</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+                    <p class="planet-represent-right"></p>
+          <p class="planet-represent-left"></p>
+                  </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <h2>What do houses represent...</h2>
+          <p class="slider-semi-header">...the rising sign at the time of your birth occupies the first house.</br>
+            Each house represents a section of your life e.g. the 7th house represents Marriage and the 10th house represents Career</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>House</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>First House(H1)</td>
+                  <td>Body & Personality</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Second House(H2)</td>
+                  <td>Fixed assets/Savings, Material possessions, and the Family you are born in</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Third House(H3)</td>
+                  <td>Communication skills, Analytical ability, Willpower, Short distance travel,and Siblings</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Fourth House(H4)</td>
+                  <td>Home & Family life, and Emotions</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Fifth House(H5)</td>
+                  <td>Creativity, Media & Entertainment, Early Education, and Children</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Sixth House(H6)</td>
+                  <td>Enemies, Diseases, Debts, Litigation, Healing ability, Analytical ability, and Daily routine</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Seventh House(H7)</td>
+                  <td>Marriage, and Legal partnerships</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Eighth House(H8)</td>
+                  <td>Death/Transformation, Ability to rise after a fall, Research and exploration, and Secret affairs</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Ninth House(H9)</td>
+                  <td>Higher Education, Teachers, Religion, Culture, Long distance travel, and Luck</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Tenth House(H10)</td>
+                  <td>Career, Public life, and Discipline</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Eleventh House(H11)</td>
+                  <td>Income, Wealth, Hopes & Wishes, Professional network, Social circle, and Philanthropy</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Twelfth House(H12)</td>
+                  <td>Losses, Isolation(Foreign lands, Jails, Hospitals), Spirituality, Imaginatition, and Hidden talent</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+                    <p class="houses-represent-right"></p>
+          <p class="houses-represent-left"></p>
+                  </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <h2>What do signs represent...</h2>
+          <p class="slider-semi-header">...imagine the sky the broken down into<br>
+            12 constellations starting from Aries to Pisces, each occupying 30 degrees.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Sign</th>
+                  <th>Details</th>
+                  <th>Degrees</th>
+                  <th>Ruler</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Aries</td>
+                  <td>Action oriented, Impulsive, Aggressive, and indicator of Willpower</td>
+                  <td>0 - 30</td>
+                  <td>Mars</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Taurus</td>
+                  <td>Determined, Stubborn, Materialistc, and indicator of Family assets</td>
+                  <td>30 - 60</td>
+                  <td>Venus</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Gemini</td>
+                  <td>Expressive, Talktaive, Forthcoming, Clever, and Intelligent, and indicator of Communication skills</td>
+                  <td>60 - 90</td>
+                  <td>Mercury</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Cancer</td>
+                  <td>Emotional, Moody, Indecisive, and indicator of Life at Home</td>
+                  <td>90 - 120</td>
+                  <td>Moon</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Leo</td>
+                  <td>Regal, Creative, Individualistic, Performer, and indicator of Early Education, and Children</td>
+                  <td>120 - 150</td>
+                  <td>Sun</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Virgo</td>
+                  <td>Analytical, Perfectionist, and indicator of the ability to fight Enemies, Obstacles and Diseases</td>
+                  <td>150 - 180</td>
+                  <td>Mercury</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Libra</td>
+                  <td>Balanced, Diplomatic, Peaceful, and indicator of Relationships, and Business partnerships</td>
+                  <td>180 - 210</td>
+                  <td>Venus</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Scorpio</td>
+                  <td>Explorer, Researcher, Mysterious, Manipulative, and indicator of Death/Transformation</td>
+                  <td>210 - 240</td>
+                  <td>Mars, Ketu</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Sagittarius</td>
+                  <td>Philosopher, Traveller, Life-long student, and indicator of Higher Education</td>
+                  <td>240 - 270</td>
+                  <td>Jupiter</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Capricorn</td>
+                  <td>Disciplined, Organized, Structured, and indicator of Career and Public life</td>
+                  <td>270 - 300</td>
+                  <td>Saturn</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Aquarius</td>
+                  <td>Unconventional, Scientific Thinker, Humanitarian, and indicator of Wealth and Network circles</td>
+                  <td>300 - 330</td>
+                  <td>Saturn, Rahu</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Pisces</td>
+                  <td>Imaginative, Dreamer, Spirtual, and indicator of Isolation</td>
+                  <td>330 - 360</td>
+                  <td>Jupiter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+                    <p class="signs-represent-right"></p>
+          <p class="signs-represent-left"></p>
+                  </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <h2>Your birth details...</h2>
+          <p class="slider-semi-header">...your time of birth has been coverted to Coordinated Universal Time(UTC).<br>
+          </p>
+          <div class="table-responsive" id="tablefordetails"> </div>
+                    <p class="birth-detail-right"></p>
+          <p class="birth-detail-left"></p>
+                  </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#moreinfo" role="button" data-slide="prev"> <span class="fa fa-angle-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#moreinfo" role="button" data-slide="next"> <span class="fa fa-angle-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+    <p class="top-button slider-arrow"><a href="#last_block" class="btn btn-circle page-scroll click_down" id="arrow"> <i class="fa fa-angle-down animated" style="margin-top:-10px;"></i> </a></p>
+</section>
+<div class="container-fluid" id="chart" style="display:none;">
+  <div class="row">
+    <div class="about"> </div>
+  </div>
+</div>
+
+<div class="container-fluid last_block" id="last_block"> </div>
+
+<!--<div class="top-link-index">
+ <a href="superuser.html">
+ <span class="top-link-first">level up</span><span style="font-family:latoregular; font-size:11px; font-weight:bold;"> +</span><br>
+ </a>
+</div>-->
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 4000) {
+        //clearHeader, not clearheader - caps H
+        $("#entire-story").addClass("entire-story");
+     } else {
+        $("#entire-story").removeClass("entire-story");
+    }
+});
+
+</script>
+<script>
+$(window).scroll(function() { 
+ var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 2600) {
+        //clearHeader, not clearheader - caps H
+        $("#chat-pop").addClass("chat-visible");
+     } else {
+        $("#chat-pop").removeClass("chat-visible");
+    }
+});
+</script>
+<script>
+$(window).scroll(function() { 
+ var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 2600) {
+        //clearHeader, not clearheader - caps H
+        $("#chat-pop").addClass("chat-visible");
+     } else {
+        $("#chat-pop").removeClass("chat-visible");
+    }
+});
+</script>
+
+
+<!--<div class="faq_top what-next" id="faq_top" style="display:none;"> 
+  <div id="faq">
+    <h2 id="faq_plus" class="visible">MORE FEATURES +</h2>
+	<h2 id="faq_mins" class="hide">MORE FEATURES -</h2>
+  
+  </div>
+  <div class="container-fluid detail_block " id="faq-detail" style="display:none;">
+	    <div class="detail">
+      <ul>
+        <li id="q1">
+          <h4>Great! please try...</h4>
+		 <h4><a href="https://www.farfaraway.co/goodtimes"><strong>Goodtimes</strong></a></h4>
+          <p>A feature that calculates the best time for marriage, career, wealth, and travel. So, if you are curious to know when you’ll get married, or change your job, or when you'll get rich, or when you'll make a trip abroad, then this is for you.</p>
+		</li>
+		<li id="q1">
+		  <h4><a href="https://www.farfaraway.co/match"><strong>Match</strong></a></h4>
+          <p>A feature that checks compatibility. So if you are in relationship and curious to know how your mental & physical connection is like, or how is it affecting your career, or how much wealth will you accumulate together, then this is for you.</p>
+        </li>
+				<li id="q1">
+		  <h4><a href="https://www.farfaraway.co/now"><strong>Now</strong></a></h4>
+          <p>A feature that explains how your planets have moved since the time your were born. So if you want to know what is happening with your life right now then this is for you. I promise you won't need to read the weekly horoscope from now.</p>
+        </li>
+		
+		
+		
+      </ul>
+    </div>
+  </div>-->
+</div>
+
+<script>
+			jQuery(document).ready(function(){
+			jQuery('#faq').click(function(){
+			jQuery('#faq-detail').fadeToggle();								 
+											 });								
+											});
+			</script>
+<!--<div class="social-index" id="social-index" style="display:none;">
+<p>share your story</p>
+<ul>
+<li class="facebook-index"><a href="javascript:void(0);" onclick="sociallinks('f');"><img src="img/facebook-logo.png"></a></li>
+<li class="twitter-index"><a href="#"><img src="img/twitter-logo.png"></a></li>
+<li class="mail-index"><a href="#"><img src="img/mail-logo.png"></a></li>
+<li class="linkedin-index"><a href="#"><img src="img/linkedin-logo.png"></a></li>
+</ul>
+</div>-->
+		<!-- AddToAny BEGIN -->
+		<!-- AddToAny BEGIN -->
+        		
+		<div class="bottom-button-share" id="social-index" style="display:none"> 
+<a href="javascript:void(0)" class="share-your-story" id="share-your-story">Flip</a>
+</div>
+<div class="bottom-button-share" id="social-index1" style="display:none">
+<a href="javascript:void(0)" class="share-your-story" id="share-your-story1">BACK</a>
+</div>
+		<div class="social-index" id="social-links" style="display:none;">
+		</div>
+		<input type="hidden" name="flip_count" id="flip_count" value="0"/>
+        <script>
+		  $(window).ready(function(){
+		   
+			$("#share-your-story").click(function(){
+				
+				if(document.getElementById('flip_count').value == 0)
+				{
+					jQuery("#load_v").fadeIn(1000);
+					setTimeout(function(){ 
+
+
+
+					storiesRender_lord();
+
+
+
+									 }, 1000);
+					
+					document.getElementById('flip_count').value =0;
+				}
+
+			});
+		  });
+		</script> 
+		
+		 <script>
+		  $(window).ready(function(){
+		   
+			$("#share-your-story1").click(function(){
+				
+				if(document.getElementById('flip_count').value == 0)
+				{
+					jQuery("#load_v").fadeIn(1000);
+					setTimeout(function(){ 
+
+
+
+					storiesRender_a();
+
+
+
+									 }, 1000);
+					
+					document.getElementById('flip_count').value =0;
+				}
+
+			});
+		  });
+		</script> 
+		
+<!-- AddToAny END -->
+
+<!--------------------------footer-email-start--------------------------- -->
+<!--------------------------footer-email-end--------------------------- -->
+<!--------------------------footer-start--------------------------- -->
+<div class="container-fluid" id="footer2" style="display:none;">
+  <div class="row">
+    <div class="footer">
+      <p class="footercopy">&#169;2020 FARFARAWAY</p>
+            <p>Made with love in <img src="https://www.farfaraway.co/img/india-flag.png" alt="alternative text" title="India" border="0"></p>
+      <ul class="social-footer">
+
+
+           <li class="yt"><a href="https://www.youtube.com/c/farfarawaydotco" target="_blank"><i class="fa fa-youtube" aria-hidden="true" style="font-size:21px;padding-top:10px;"></i></a></li>
+
+         </ul>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+
+$('#footer2').delay(5000).fadeIn(2000); 
+
+
+});
+</script>
+<!--------------------------footer-end--------------------------- -->
+<!--<div style="overflow:hidden;">
+
+
+
+    <div class="form-group">
+
+
+
+        <div class="row">
+
+
+
+            <div class="col-md-8">
+
+
+
+                <div id="datetimepicker12"></div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+ 
+
+
+
+</div>-->
+<!-- Map Section -->
+<!-- Footer -->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/grayscale.js"></script>
+<script>
+
+;(function ( $, window, document, undefined ) {
+	// Plugin constructor
+	var Starfield = function(el, options) {
+		this.el			= el;
+		this.$el		= $(el);
+		this.options	= options;
+		that			= this;
+	};
+	var isPlaying;
+	var isInited	= false;
+	var canCanvas	= false;
+	var animId;
+	// https://paulirish.com/2011/requestanimationframe-for-smart-animating/
+	// https://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+	// requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
+	// MIT license
+	(function() {
+		var lastTime = 0;
+		var vendors = ['ms', 'moz', 'webkit', 'o'];
+		for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+			window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+			window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+									   || window[vendors[x]+'CancelRequestAnimationFrame'];
+		}
+	 
+		if (!window.requestAnimationFrame)
+			window.requestAnimationFrame = function(callback, element) {
+				var currTime = new Date().getTime();
+				var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+				var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+				  timeToCall);
+				lastTime = currTime + timeToCall;
+				return id;
+			};
+	 
+		if (!window.cancelAnimationFrame)
+			window.cancelAnimationFrame = function(id) {
+				clearTimeout(id);
+			};
+	}());
+  
+	// Plugin prototype
+	Starfield.prototype = {
+		// Default settings
+		defaults: {
+			starColor:	"rgba(0,0,0,1)", 
+			bgColor:	"rgba(255,255,255,1)",
+			mouseMove:	false,
+			mouseColor:	"rgba(0,0,0,0.2)",
+			mouseSpeed:	0,
+			fps:		0,
+			speed:		2,
+			quantity:	75,
+			ratio:		100,
+			divclass:	"starfield"
+		},
+		// Resize the canvas
+		resizer: function() {
+			var oldStar				= this.star;
+			var initW				= this.context.canvas.width;
+			var initH				= this.context.canvas.height;
+			this.w					= this.$el.width();
+			this.h					= this.$el.height();
+			this.x					= Math.round(this.w / 2);
+			this.y					= Math.round(this.h / 2);
+			// Check if the device is in portrait orientation
+			this.portrait			= this.w < this.h;
+			// Get the ratio of the old height to the new height
+			var ratX 				= this.w / initW;
+			var ratY				= this.h / initH;
+			this.context.canvas.width	= this.w;
+			this.context.canvas.height	= this.h;
+			// Recalculate the position of each star proportionally to new w and h
+			for(var i = 0; i < this.n; i++) {
+				this.star[i][0]	= oldStar[i][0] * ratX;
+				this.star[i][1]	= oldStar[i][1] * ratY;
+				this.star[i][3] = this.x + (this.star[i][0] / this.star[i][2]) * this.star_ratio;
+				this.star[i][4] = this.y + (this.star[i][1] / this.star[i][2]) * this.star_ratio;
+			}
+			that.context.fillStyle		= that.settings.bgColor;
+			this.context.strokeStyle	= this.settings.starColor;
+		},
+		init: function() {
+			// Get default settings 
+			this.settings = $.extend({}, this.defaults, this.options);
+			// Query variables
+			var url	= document.location.href;
+			this.n	= parseInt(
+				(url.indexOf('n=') != -1) ? url.substring(url.indexOf('n=') + 2, (
+					(url.substring(
+						url.indexOf('n=') + 2,
+						url.length)
+					).indexOf('&') != -1) ? url.indexOf('n=') + 2 + (url.substring(
+						url.indexOf('n=') + 2,
+						url.length)
+					).indexOf('&') :
+						url.length) :
+							this.settings.quantity
+			);
+			this.flag				= true;
+			this.test 				= true;
+			this.w					= 0;
+			this.h					= 0;
+			this.x					= 0;
+			this.y					= 0;
+			this.z					= 0;
+			this.star_color_ratio	= 0;
+			this.star_x_save		= 0;
+			this.star_y_save		= 0;
+			this.star_ratio			= this.settings.ratio;
+			this.star_speed			= this.settings.speed;
+			this.star_speed_save	= 0;
+			this.star				= new Array(this.n);
+			this.color				= this.settings.starColor;
+			this.opacity			= 0.1;
+			this.cursor_x			= 0;
+			this.cursor_y			= 0;
+			this.mouse_x			= 0;
+			this.mouse_y			= 0;
+			this.canvas_x			= 0;
+			this.canvas_y			= 0;
+			this.canvas_w			= 0;
+			this.canvas_h			= 0;
+			
+			this.fps				= this.settings.fps;
+			// Check for device orientation support
+			this.desktop			= !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|IEMobile)/);
+			this.orientationSupport	= window.DeviceOrientationEvent !== undefined;
+			this.portrait			= null;
+			// Inject the canvas element
+			var canvasInit = function(){
+				that.w			= that.$el.width();
+				that.h			= that.$el.height();
+				that.initW		= that.w;
+				that.initH		= that.h;
+				that.portrait	= that.w < that.h;
+				that.wrapper	= $('<canvas />')
+				.addClass(that.settings.divclass);
+				that.wrapper.appendTo(that.el);
+				that.starz	= $('canvas', that.el);
+				if (that.starz[0].getContext) { // Can canvas?
+					that.context	= that.starz[0].getContext('2d');
+					canCanvas		= true;
+				}
+				that.context.canvas.width = that.w;
+				that.context.canvas.height = that.h;
+			}
+			canvasInit();
+			// Create initial star array and canvas context
+			var starInit = function(){
+				// Get context for the canvas element
+				if(canCanvas){ // Check for canvas drawering abilities.
+					that.x					= Math.round(that.w / 2);
+					that.y					= Math.round(that.h / 2);
+					that.z					= (that.w + that.h) / 2;
+					that.star_color_ratio	= 1 / that.z;
+					that.cursor_x			= that.x;
+					that.cursor_y			= that.y;
+					// Big bang
+					for(var i = 0; i < that.n; i++) {
+						that.star[i]	= new Array(5); 
+						that.star[i][0]	= Math.random() * that.w * 2 - that.x * 2;
+						that.star[i][1]	= Math.random() * that.h * 2 - that.y * 2;
+						that.star[i][2]	= Math.round(Math.random() * that.z);
+						that.star[i][3]	= 0;
+						that.star[i][4]	= 0;
+					}
+					// Set the colors
+					that.context.fillStyle		= that.settings.bgColor;
+					that.context.strokeStyle	= that.settings.starColor;
+				} else {
+					return;
+				}
+			}
+			starInit();
+			isInited = true;
+		},
+		// Iterate over every star on the field and move it slightly
+		anim: function(){
+			this.mouse_x	= this.cursor_x - this.x;
+			this.mouse_y	= this.cursor_y - this.y;
+			this.context.fillRect(0, 0, this.w, this.h);
+			for(var i = 0; i < this.n; i++) {
+				this.test			= true;
+				this.star_x_save	= this.star[i][3];
+				this.star_y_save	= this.star[i][4];
+				this.star[i][0]	+= this.mouse_x >> 4;
+				// X coords
+				if(this.star[i][0] > this.x << 1) {
+					this.star[i][0] -= this.w << 1;
+					this.test = false;
+				}
+				if(this.star[i][0] <- this.x << 1) {
+					this.star[i][0] += this.w << 1;
+					this.test = false;
+				}
+				// Y coords
+				this.star[i][1] += this.mouse_y >> 4;
+				if(this.star[i][1] > this.y << 1) {
+					this.star[i][1] -= this.h << 1;
+					this.test = false;
+				}
+				if(this.star[i][1] <- this.y << 1) {
+					this.star[i][1] += this.h << 1;
+					this.test = false;
+				}
+				// Z coords
+				this.star[i][2] -= this.star_speed;
+				if(this.star[i][2] > this.z) {
+					this.star[i][2] -= this.z;
+					this.test = false;
+				}
+				if(this.star[i][2] < 0) {
+					this.star[i][2] += this.z;
+					this.test = false;
+				}
+				this.star[i][3] = this.x + (this.star[i][0] / this.star[i][2]) * this.star_ratio;
+				this.star[i][4] = this.y + (this.star[i][1] / this.star[i][2]) * this.star_ratio;
+				if(this.star_x_save > 0
+				&& this.star_x_save < this.w
+				&& this.star_y_save > 0
+				&& this.star_y_save < this.h
+				&& this.test) {
+					this.context.lineWidth = (1 - this.star_color_ratio * this.star[i][2]) * 2;
+					this.context.beginPath();
+					this.context.moveTo(this.star_x_save,this.star_y_save);
+					this.context.lineTo(this.star[i][3], this.star[i][4]);
+					this.context.stroke();
+					this.context.closePath();
+				}
+			}
+		},
+		loop: function(){
+			this.anim();
+			animId = window.requestAnimationFrame(function(){that.loop()});
+		},
+		move: function(){
+			var doc	= document.documentElement;
+			if (this.orientationSupport && !this.desktop) {
+				//$('<p class="output"></p>').prependTo('.content');
+				//var output = document.querySelector('.output');
+				window.addEventListener('deviceorientation', handleOrientation, false);
+			} else {
+				window.addEventListener('mousemove', handleMousemove, false);
+			}
+			function handleOrientation(event) {
+				if( event.beta !== null && event.gamma !== null) {
+					var x = event.gamma, y = event.beta;
+					if (!that.portrait) {
+						x = event.beta * -1;
+						y = event.gamma;
+					}
+					that.cursor_x	= (that.w / 2) + (x * 5);
+					that.cursor_y	= (that.h / 2) + (y * 5);
+					/*var output = document.querySelector('.output');
+					output.innerHTML = "rotZ : " + Math.round(event.alpha) + "<br />\n";
+					output.innerHTML += "rotX: " + Math.round(event.beta) + "<br />\n";
+					output.innerHTML += "rotY: " + Math.round(event.gamma) + "<br />\n";*/
+				}
+			}
+			function handleMousemove(event) {
+				that.cursor_x	= event.pageX || event.clientX + doc.scrollLeft - doc.clientLeft;
+				that.cursor_y	= event.pageY || event.clientY + doc.scrollTop - doc.clientTop;
+			}
+		},
+		stop: function(){
+			window.cancelAnimationFrame(animId);
+			isPlaying = false;
+		},
+		// this.start this whole thing
+		start: function() {
+			// Initialize
+			if (!isInited) {
+				isInited = true;
+				this.init();
+			}
+			
+			// Start the animation loop
+			if (!isPlaying) {
+				isPlaying = true;
+				this.loop();
+			}
+			window.addEventListener('resize', function(){that.resizer()}, false);
+			window.addEventListener('orientationchange', function(){that.resizer()}, false);
+			// Move stars on mouse move
+			if (this.settings.mouseMove) {
+				this.move();
+			}
+			return this;
+		}
+	}
+	Starfield.defaults	= Starfield.prototype.defaults;
+	// Finally, the actual plugin code
+	$.fn.starfield = function(options){
+		return this.each(function() {
+			new Starfield(this, options).start();
+		});
+	}
+	window.Starfield = Starfield;
+})( jQuery, window, document );
+jQuery(document).ready(function(){
+jQuery('.starfield').starfield();
+   
+});
+</script>
+<script>
+
+			var theForm = document.getElementById( 'theForm' );
+
+
+
+			new stepsForm( theForm, {
+
+				onSubmit : function( form ) {
+
+					// hide form
+
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+
+
+					/*
+
+					form.submit()
+
+					or
+
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+
+					*/
+
+
+
+					// let's just simulate something...
+
+					var messageEl = theForm.querySelector( '.final-message' );
+
+					messageEl.innerHTML = '';
+
+					
+
+					classie.addClass( messageEl, 'show' );
+						
+					jQuery('#pre_mess_opt').fadeIn(1000);
+					jQuery('#pre_mess').fadeIn(1000);
+					jQuery('#pos_planet_mess').hide();
+					jQuery('#story_ids').hide();
+					
+	
+					
+				}
+
+			});
+			
+			//------------------>Custom functions<-------------------------------
+			
+			function startp()
+				{
+															
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/checkCustomerprocess.php?email='+jQuery('#email').val(),
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										if(data == 0){
+				jQuery('#story_ids').html('All set :)');		
+						
+						jQuery('#pos_planet_mess').html('Sit back, relax, stay indoors, </br> and enjoy your story');	
+
+			jQuery('#story_ids').fadeIn(1000);
+			jQuery('#pos_planet_mess').fadeIn(1000);
+						
+											startprocessautologin();
+											//jQuery('#new-member-inner').fadeIn(1000);
+											//document.getElementById('usermail_r').value = jQuery('#email').val();
+										}else if(data == 'yes'){
+										   sentpassmail(jQuery('#email').val());
+											jQuery('#story_ids').hide();		
+											jQuery('#pos_planet_mess').hide();	
+
+											jQuery('#existing-member-inner').fadeIn(1000);
+											document.getElementById('usermaillogin').value = jQuery('#email').val();
+											jQuery('#mess_l_2').fadeIn(1000);
+										}
+										else
+										{
+												jQuery('#story_ids').html('All set :)');		
+														
+														jQuery('#pos_planet_mess').html('Sit back, relax, stay indoors, </br> and enjoy your story');	
+
+											jQuery('#story_ids').fadeIn(1000);
+											jQuery('#pos_planet_mess').fadeIn(1000);
+						
+											startprocessautologin();
+										}
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+							
+						
+				}
+			function sentpassmail(mail)
+				{
+				  forget_direct1();
+				}
+			
+			function startprocess()
+				{
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									document.getElementById('chartd').value = data;
+									jQuery('#existing-member-inner').hide();
+									jQuery('#story_ids').fadeIn(1000);
+											jQuery('#pos_planet_mess').fadeIn(1000);
+											
+									jQuery('#story_ids').html('All set :)');		
+						
+									jQuery('#pos_planet_mess').html('Sit back, relax, stay indoors, </br> and enjoy your story');	
+									
+									jQuery('#c1').attr('src',"img/chart/"+data+".jpg");
+									jQuery('#chart').show();
+									cron_recording();
+									
+									setTimeout(function(){ 
+
+
+
+									jQuery('#chartpress').trigger('click');
+
+
+
+									 }, 2000);
+									
+									rendertabledetails();
+									tablefordetails();
+									rendernakclass();
+									//c1_d9_creation();	
+									//c1_d10_creation();
+									//c1_d2_creation();
+									//c1_d3_creation();
+									//c1_d4_creation();
+									//c1_d7_creation();
+									//c1_d12_creation();
+									//c1_d16_creation();
+									//c1_d20_creation();
+									//c1_d24_creation();
+									//c1_d27_creation();
+									//c1_d30_creation();
+									//c1_d40_creation();
+									//c1_d45_creation();
+									//c1_d60_creation();
+									
+									needfullst();
+									jQuery('#question_class').show();
+									setTimeout(function(){ 
+
+
+
+									storiesRender();
+									dasharender();
+
+
+									 }, 3000);
+
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+				function startprocessautologin()
+				{
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_new_d9_here.php?behave=autologin',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									jQuery('#c1').attr('src',"img/chart/"+data+".jpg");
+									document.getElementById('chartd').value = data;
+										jQuery.ajax({
+
+												url: 'https://www.farfaraway.co/header.php',
+
+												dataType: 'text',
+
+												contentType: 'application/x-www-form-urlencoded',
+
+												success: function( data, textStatus, jQxhr ){
+														jQuery('#whole_div').html(data);
+														jQuery('#existing-member-inner').hide();
+														jQuery('#existing-member-inner').hide();
+														jQuery('#story_ids').fadeIn(1000);
+																jQuery('#pos_planet_mess').fadeIn(1000);
+																
+														jQuery('#story_ids').html('All set :)');		
+											
+														jQuery('#pos_planet_mess').html('Sit back, relax, stay indoors, </br> and enjoy your story');	
+														
+														
+														jQuery('#chart').show();
+														cron_recording();
+														
+														setTimeout(function(){ 
+
+
+
+														jQuery('#chartpress').trigger('click');
+
+
+
+														 }, 2000);
+														
+														rendertabledetails();
+														tablefordetails();
+														rendernakclass();
+															//c1_d9_creation();	
+															//c1_d10_creation();
+															//c1_d2_creation();
+															//c1_d3_creation();
+															//c1_d4_creation();
+															//c1_d7_creation();
+															//c1_d12_creation();
+															//c1_d16_creation();
+															//c1_d20_creation();
+															//c1_d24_creation();
+															//c1_d27_creation();
+															//c1_d30_creation();
+															//c1_d40_creation();
+															//c1_d45_creation();
+															//c1_d60_creation();
+														
+														needfullst();
+														jQuery('#question_class').show();
+														setTimeout(function(){ 
+
+
+
+														storiesRender();
+														dasharender();
+
+
+														 }, 3000);
+
+													
+											},
+
+												error: function( jqXhr, textStatus, errorThrown ){   
+
+												}
+
+											});
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				function c1_d9_creation()
+				{
+					
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d9.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d9').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d9_btn").hide();
+									jQuery("#d9_genrate").show();
+									jQuery("#loading_map").hide();
+									
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				function c1_d10_creation()
+				{
+					
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d10.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d10').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d10_btn").hide();
+									jQuery("#d10_genrate").show();
+									jQuery("#loading_map").hide();
+									
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+function generate_transits()
+				{
+					
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/transittable.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									
+									jQuery("#transits_background").show();
+									jQuery('#transits').html(data);
+									
+									jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+
+
+function c1_d2_creation()
+				{
+					
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d2_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d2').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d2_btn").hide();
+									jQuery("#d2_genrate").show();
+									jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+
+function c1_d3_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d3_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d3').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d3_btn").hide();
+									jQuery("#d3_genrate").show();	
+									jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+
+function c1_d4_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d4_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d4').attr('src',"img/chart/"+data+".jpg");
+									
+									jQuery("#chart_genrate_d4_btn").hide();
+										jQuery("#d4_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+
+
+
+function c1_d7_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d7_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d7').attr('src',"img/chart/"+data+".jpg");
+									
+									jQuery("#chart_genrate_d7_btn").hide();
+									jQuery("#d7_genrate").show();
+									jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+	function c1_d12_creation()
+				{
+					
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d12_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d12').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d12_btn").hide();
+									jQuery("#d12_genrate").show();
+									jQuery("#loading_map").hide();
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+	function c1_d16_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d16_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d16').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d16_btn").hide();
+									jQuery("#d16_genrate").show();
+									jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+	function c1_d20_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d20_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d20').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d20_btn").hide();
+									jQuery("#d20_genrate").show();
+									jQuery("#loading_map").hide();
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+		function c1_d24_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d24_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d24').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d24_btn").hide();
+									jQuery("#d24_genrate").show();
+									jQuery("#loading_map").hide();
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+		function c1_d27_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d27_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d27').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d27_btn").hide();
+									jQuery("#d27_genrate").show();
+									jQuery("#loading_map").hide();
+									
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+
+
+		function c1_d30_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d30_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d30').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d30_btn").hide();
+									jQuery("#d30_genrate").show();
+									jQuery("#loading_map").hide();
+									
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+					function c1_d40_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d40_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d40').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d40_btn").hide();
+									jQuery("#d40_genrate").show();
+									jQuery("#loading_map").hide();
+									
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+				
+					function c1_d45_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d45_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d45').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d45_btn").hide();
+									jQuery("#d45_genrate").show();
+									jQuery("#loading_map").hide();
+									
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				
+			function c1_d60_creation()
+				{
+					jQuery("#loading_map").show();
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_d60_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									
+									
+									
+									jQuery('#c_d60').attr('src',"img/chart/"+data+".jpg");
+									jQuery("#chart_genrate_d60_btn").hide();
+									jQuery("#d60_genrate").show();
+									jQuery("#loading_map").hide();
+									
+									
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+				}
+				function cron_recording()
+					{
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/cronentry.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+			
+			function needfullst()
+				{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/updatefooter1.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#footer1').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+									function checkcityAPI()
+						{
+							jQuery('#listed_city').hide();
+							var spaceStr = document.getElementById('place_dob').value;
+							var spaceStr = spaceStr.split(","); 
+							
+							var len = jQuery('#place_dob').val().length;
+							if(spaceStr != '' && len > 2){
+							var vv =	spaceStr[0]; 
+							var vv1 = vv.replace(/\s+/g, '');
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/cities_here.php?city='+vv1,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									jQuery("#listed_city").fadeIn(1000);
+									jQuery('#listed_city').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+						}
+
+						}
+				
+				function tablefordetails()
+					{
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/detailstable.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#tablefordetails').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+
+			
+			function dasharender()
+				{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/dasha2020.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#dasha').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+
+			function rendertabledetails()
+
+				{
+
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/rendertable_d9.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#table20').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+				
+			function rendernakclass()
+
+				{
+
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/nakclass2020.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#table21').html(data);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+				
+function storiesRender()
+					{
+						
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/storiesindex2.php?stories_id='+document.getElementById('chartd').value,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+										jQuery('#social-index').fadeIn(1000);
+										jQuery("#share-your-story").html("Flip");
+										jQuery("#load_v").hide();
+										jQuery('#social-index1').hide();
+										jQuery("#share-your-story1").hide();
+									jQuery('#when-will-video').fadeIn(1000);
+									jQuery('#last_block').html(data);
+									jQuery('#faq_top').fadeIn(1000);
+									
+								 jQuery('html, body').animate({
+									scrollTop: jQuery("#last_block").offset().top
+								}, 1000);
+									 
+									//jQuery('#learn-vedic-link').fadeIn(1000);
+									checkforcustomerforIndex();
+									socialIndex();
+									showPopDiv();	
+									checkforaccess();	
+
+
+									showPopDiv();
+
+
+
+									
+									
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+					
+					
+					
+						function storiesRender_a()
+					{
+						
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/storiesindex2.php?stories_id='+document.getElementById('chartd').value,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+										
+										jQuery('#social-index').fadeIn(1000);
+										jQuery("#share-your-story").fadeIn(1000);
+										jQuery("#load_v").hide();
+										jQuery('#social-index1').hide();
+										jQuery("#share-your-story1").hide();
+									jQuery('#when-will-video').fadeIn(1000);
+									jQuery('#last_block').html(data);
+									jQuery('#faq_top').fadeIn(1000);
+
+									 jQuery('html, body').animate({
+        scrollTop: jQuery("#last_block").offset().top
+    }, 1000);
+									//jQuery('#learn-vedic-link').fadeIn(1000);
+									checkforcustomerforIndex();
+									socialIndex();
+									showPopDiv();	
+									checkforaccess();	
+
+
+									showPopDiv();
+
+
+
+									
+									
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+					
+					
+				function storiesRender_lord()
+					{
+						
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/storiesindex2_lord.php?stories_id='+document.getElementById('chartd').value,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									jQuery('#social-index1').fadeIn(1000);
+									jQuery("#share-your-story1").fadeIn(1000);
+									jQuery('#social-index').hide();
+									jQuery("#share-your-story").hide();
+
+									jQuery("#load_v").hide();
+									jQuery('#when-will-video').fadeIn(1000);
+									jQuery('#last_block').html(data);
+									jQuery('#faq_top').fadeIn(1000);
+									
+									 jQuery('html, body').animate({
+        scrollTop: jQuery("#last_block").offset().top
+    }, 1000);
+									//jQuery('#learn-vedic-link').fadeIn(1000);
+									checkforcustomerforIndex();
+									socialIndex();
+									showPopDiv();	
+									checkforaccess();	
+
+
+									showPopDiv();
+
+
+
+									
+									
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+					}
+					
+					
+					function showPopDiv()
+						{
+							setTimeout(function(){ 
+
+
+
+									jQuery("#pop-cont-div").fadeIn(1000);
+
+
+
+									 }, 7000);
+		
+		
+							
+						}
+						
+				/*function checkforaccess()
+					{
+								jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/loading.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+										
+										if(data == 'yes')
+											{														
+												jQuery('#social-index').fadeIn(1000);
+												jQuery("#chat-pop").fadeIn(1000);
+											}
+										else
+											{
+												
+												jQuery('#social-index').hide();
+												jQuery("#chat-pop").hide();
+											}
+											
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+					}*/
+					
+					function checkforcustomerforIndex()
+						{
+										jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/checkforcustomerforIndex.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+										
+										if(data == 1)
+											{
+												//jQuery('#learn-vedic-link').fadeIn(1000);
+												jQuery('#social-index').fadeIn(1000);
+												//jQuery('#social-links').fadeIn(1000);
+												
+											}
+										if(data == 0)
+											{
+												jQuery('#learn-vedic-link').hide();
+												jQuery('#social-index').hide();
+												jQuery('#share-your-story').hide();
+												jQuery('#social-links').hide();
+												
+											}
+
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+						}
+					
+					function socialIndex()
+						{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/addtoany.php?id='+document.getElementById('chartd').value,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+										jQuery('#social-links').html(data);
+										jQuery('#social-index').fadeIn(1000);	
+										sociallinks();
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+						}
+					
+
+			function checkvalidate(idinput)
+
+				{
+
+				
+
+						var ob = document.getElementById(idinput).value;
+						if(ob == '')
+							{
+									jQuery('#errorname').show();
+									jQuery('#errorname').html('*please enter name');
+									return false;
+							}
+						else
+							{
+						ob1 = ob.slice(-1);
+
+						var letters = /^[A-Za-z]+$/;  
+
+   if(ob1.match(letters) || ob1.match(/\s/g))  
+
+     {  
+jQuery('#errorname').hide();
+
+      return true;  
+
+     }  
+
+   else  
+
+     {  
+
+	  
+
+       var shortenedString = ob.substr(0,(ob.length -1));
+
+        jQuery('#'+idinput).val(shortenedString);
+
+     return false;  
+
+     
+
+	}	 
+}
+				}
+
+				
+
+	function checkdaysvalid()
+
+		{
+
+			var dd = document.getElementById('dob_dd').value;
+
+			var mm = document.getElementById('dob_mm').value;
+
+			if(mm == '')
+
+				{
+
+				  jQuery('#errordob').html('Please enter month');
+
+						jQuery('#errordob').show();
+
+						 document.getElementById('dob_mm').value = "";
+
+							window.setTimeout(function ()
+
+							{
+
+								document.getElementById('dob_mm').focus();
+
+							}, 0);
+
+				}
+				
+		if(mm == 1 || mm == 3 || mm == 5 || mm == 7 || mm == 8 || mm == 10 || mm == 12 )
+
+				{
+
+						if(dd >0 && dd<=31)
+
+							{
+
+							jQuery('#errordob').html('');
+
+								jQuery('#errordob').hide();
+
+								return true;
+
+							}
+
+						else
+
+							{
+
+								jQuery('#errordob').html('Please check the date');
+
+								jQuery('#errordob').show();
+
+								document.getElementById('dob_dd').value = '';
+
+								document.getElementById('dob_dd').focus();
+
+								return false;
+
+							}
+
+				}
+
+			else if(mm == 2)
+
+				{
+
+				var datelap ='';	
+
+                var year = document.getElementById('dob_yyyy').value;				
+
+								if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+
+									{
+
+										 datelap = 29;
+
+									}
+
+									else
+
+									{
+
+										datelap = 28;
+
+									}
+
+							
+
+				if(dd >0 && dd<=datelap)
+
+							{						
+
+						jQuery('#errordob').html('');
+
+								jQuery('#errordob').hide();
+
+								return true;
+
+							}
+
+						else
+
+							{
+
+								
+
+								jQuery('#errordob').html('*please check the date again');
+
+								jQuery('#errordob').show();
+
+								document.getElementById('dob_dd').value = '';
+
+								document.getElementById('dob_dd').focus();
+
+								return false;
+
+							}
+
+				}
+
+			else
+
+				{
+
+						if(dd >0 && dd<=30)
+
+							{
+
+							
+
+								jQuery('#errordob').html('');
+
+								jQuery('#errordob').hide();
+
+								return true;
+
+							}
+
+						else
+
+							{
+
+								jQuery('#errordob').html('*please check the date');
+
+								jQuery('#errordob').show();
+
+								
+
+								document.getElementById('dob_dd').value = '';
+
+								document.getElementById('dob_dd').focus();
+
+								return false;
+
+							}
+
+				}
+
+		}
+
+		
+
+		
+
+		
+		
+
+		function checkplacedob()
+
+				{
+
+						var place_dob = document.getElementById('place_dob').value;
+
+						var city = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/;
+
+						if(place_dob.match(city))  
+
+						 {  
+
+							jQuery('#errortime_place_dob').html('');
+
+							jQuery('#errortime_place_dob').hide();
+
+							return true;  
+
+						 }  
+
+						else
+
+						 {
+
+							//jQuery('#errortime_place_dob').html('Please check the name of the city');
+
+							//jQuery('#errortime_place_dob').show();
+
+							return false;
+
+						 }
+
+						
+
+				}
+
+
+	</script>
+<script>
+
+   jQuery('.carousel').carousel({
+
+    interval: false
+
+}); 
+
+function validateDD(inputids)
+
+	{
+
+	
+
+		if(inputids == 'dob_yyyy')
+
+			{
+
+			 if(document.getElementById('dob_yyyy').value == '')
+
+				{
+					jQuery('#errordob').html('Please enter the year of birth');
+					jQuery('#errordob').show();
+					document.getElementById('dob_yyyy').value = "";
+
+									window.setTimeout(function ()
+
+									{
+
+										document.getElementById('dob_yyyy').focus();
+
+									}, 0);
+
+					return false;
+				}
+			   else if(document.getElementById('dob_yyyy').value < 1600 || document.getElementById('dob_yyyy').value > 2100)
+				{
+							jQuery('#errordob').html('*please enter year between 1800-2100');
+					jQuery('#errordob').show();
+					document.getElementById('dob_yyyy').value = "";
+
+									window.setTimeout(function ()
+
+									{
+
+										document.getElementById('dob_yyyy').focus();
+
+									}, 0);
+
+					return false;
+
+				}
+				{
+					
+				}
+
+			
+
+			}
+
+		if(inputids == 'dob_mm')
+
+			{
+			if(document.getElementById('dob_yyyy').value != '')
+				{
+
+				if(document.getElementById('dob_mm').value == '')
+
+					{
+						
+										jQuery('#errordob').html('Please enter the month of birth');
+
+										jQuery('#errordob').show();
+
+										 document.getElementById('dob_mm').value = "";
+
+											window.setTimeout(function ()
+
+											{
+
+												document.getElementById('dob_mm').focus();
+
+											}, 0);
+
+										return false;
+							
+
+
+					}
+
+				else if(jQuery('#dob_mm').val() < 0 || jQuery('#dob_mm').val() > 12)
+
+					{
+
+						jQuery('#errordob').html('Please enter the month between 1-12');
+
+						jQuery('#errordob').show();
+
+						 document.getElementById('dob_mm').value = "";
+
+							window.setTimeout(function ()
+
+							{
+
+								document.getElementById('dob_mm').focus();
+
+							}, 0);
+
+						return false;
+
+					}
+				
+			
+			}
+}
+			
+
+			
+
+	}
+
+   </script>
+<script>
+		function checkcity(divid)
+			{
+				jQuery("#city_"+divid).css('background','#ffffff');
+				var html = jQuery("#city_"+divid).html();
+				jQuery("#place_dob").val(html);
+				jQuery("#place_dob1").val(jQuery('#city_hidden_'+divid).val());
+			}
+		function checkcity1(divid)
+			{
+				jQuery("#city_"+divid).css('background','#cccccc');
+			}
+		function donecity(divid)
+			{
+				jQuery("#listed_city").remove();
+				nextSlide();
+			}
+
+
+
+function needfullstory()
+	{
+	   				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/postemailtostory.php?email_address='+document.getElementById('email_story').value,
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										jQuery('.bottom-email').html('Stay tuned :)');
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+	}
+	
+	function have_question()
+		{
+		window.location.href = 'https://www.farfaraway.co/ask';
+			jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/havequestion.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+
+										jQuery('#question-inner').html(data);
+										jQuery('#question-outer').show(800);
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+			
+		}
+		
+		function savequestions()
+			{
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savequestions.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#ques_form').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+
+									jQuery('#questionc-mess').html('<p class="thanks">Thanks for your question</p>');
+									setTimeout(function(){ 
+
+
+
+									jQuery('#question-outer').hide();
+
+
+
+									 }, 2000);
+		
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+			}
+			function close_p()
+				{
+					jQuery('#question-outer').hide(800);
+				}
+				
+				function showdiv()
+					{
+						jQuery('#how-outer').show(800);
+					}
+				function close_h()
+					{
+						jQuery('#how-outer').hide(800);
+					}
+					
+	</script>
+<input type="hidden" id="stepid" value="0"/>
+<div class="question-outer" id="question-outer" style="display:none">
+  <div class="container qusetion-pop" id="question-inner"> </div>
+</div>
+<div class="question-outer" id="how-outer" style="display:none">
+  <div class="container qusetion-pop" id="how-inner">
+    <div class="row"> <span onClick="close_h();">X</span>
+      <div class="col-lg-12">
+        <div class="col-lg-12">
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script>
+
+function career_table()
+{
+	jQuery("#loading_map").show();
+	jQuery("#table21").hide();
+			{
+
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/nakclass_career.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									jQuery("#loading_map").hide();
+									jQuery('#table21').html(data);
+									jQuery("#table21").show();
+									
+										jQuery('#marriage').removeClass('topofchart1');
+										jQuery('#personality').removeClass('topofchart1');
+										jQuery('#all_planets').removeClass('topofchart1');
+										jQuery('#career').addClass('topofchart1');
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+								
+}
+function personality()
+{
+	jQuery("#loading_map").show();
+	jQuery("#table21").hide();
+			{
+
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/nakclass_personality.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									jQuery("#loading_map").hide();
+									jQuery('#table21').html(data);
+									jQuery("#table21").show();
+									
+										jQuery('#marriage').removeClass('topofchart1');
+										
+										jQuery('#all_planets').removeClass('topofchart1');
+										jQuery('#career').removeClass('topofchart1');
+										jQuery('#personality').addClass('topofchart1');
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+								
+}
+function marriage_table()
+{
+	jQuery("#loading_map").show();
+	jQuery("#table21").hide();
+			{
+
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/nakclass_marriage.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									jQuery("#loading_map").hide();
+									jQuery('#table21').html(data);
+									jQuery("#table21").show();
+									
+										jQuery('#marriage').addClass('topofchart1');
+										jQuery('#personality').removeClass('topofchart1');
+										jQuery('#all_planets').removeClass('topofchart1');
+										jQuery('#career').removeClass('topofchart1');
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+								
+}
+		
+function all_table()
+{
+	jQuery("#loading_map").show();
+	jQuery("#table21").hide();
+			{
+
+					jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/nakclass2020.php',
+
+									dataType: 'text',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									success: function( data, textStatus, jQxhr ){
+									jQuery("#loading_map").hide();
+									jQuery('#table21').html(data);
+									jQuery("#table21").show();
+									jQuery('#marriage').removeClass('topofchart1');
+										jQuery('#personality').removeClass('topofchart1');
+										jQuery('#all_planets').addClass('topofchart1');
+										jQuery('#career').removeClass('topofchart1');
+
+									},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+				}
+								
+}
+
+function degree_aspects()
+{
+	jQuery("#loading_map").show();
+			jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_birth_aspects.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										/*alert(data);*/
+										
+										jQuery('#c1').attr('src',"img/chart/aspects/"+data+".jpg");
+										jQuery('#lords').removeClass('topofchart1');
+										jQuery('#degrees').removeClass('topofchart1');
+										jQuery('#aspects').addClass('topofchart1');
+										jQuery("#loading_map").hide();
+										
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+								
+			
+}
+
+
+function degree_lord()
+	{
+		jQuery("#loading_map").show();
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_birth_lord.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										
+										jQuery('#c1').attr('src',"img/chart/lord/"+data+".jpg");
+										jQuery('#lords').addClass('topofchart1');
+										jQuery('#degrees').removeClass('topofchart1');
+										jQuery('#aspects').removeClass('topofchart1');
+										jQuery("#loading_map").hide();
+										
+										
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+								
+ 	}
+
+function degree_birth()
+
+	{
+		jQuery("#loading_map").show();
+			
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_birth_degree_1.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#theForm').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										
+										jQuery('#c1').attr('src',"img/chart/degree/"+data+".jpg");
+										jQuery('#lords').removeClass('topofchart1');
+										jQuery('#degrees').addClass('topofchart1');
+										jQuery('#aspects').removeClass('topofchart1');
+										jQuery("#loading_map").hide();
+										
+										
+										
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+								
+		  
+	}
+function refershthings()
+{
+jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/logout.php',
+									dataType: 'text',
+									success: function( data, textStatus, jQxhr ){
+										window.location.href= 'https://www.farfaraway.co/';
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+								});	
+}
+jQuery(document).ready(function(){
+
+		jQuery('#faq_plus').click(function(){
+						jQuery('#faq_plus').removeClass('visible');
+						jQuery('#faq_plus').addClass('hide');
+						jQuery('#faq_mins').removeClass('hide');
+						jQuery('#faq_mins').addClass('visible');
+			
+		});
+	
+		jQuery('#faq_mins').click(function(){
+						jQuery('#faq_mins').removeClass('visible');
+						jQuery('#faq_mins').addClass('hide');
+						jQuery('#faq_plus').removeClass('hide');
+						jQuery('#faq_plus').addClass('visible');
+		});
+	jQuery('#logout').click(function(){
+
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/logout.php',
+									dataType: 'text',
+									success: function( data, textStatus, jQxhr ){
+										window.location.href= 'https://www.farfaraway.co/';
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+								});
+
+	});
+	
+	jQuery('#refersh_story').click(function(){
+				jQuery.ajax({
+									url: 'https://www.farfaraway.co/refersh_user.php',
+									dataType: 'text',
+									success: function( data, textStatus, jQxhr ){
+										window.location.href= 'https://www.farfaraway.co/';
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+							});
+	});
+	
+	
+	jQuery('#check_story').click(function(){
+		jQuery("#loading_map").show();
+			jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_birth_degree_here.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										
+										
+									document.getElementById('chartd').value = data;
+									cron_recording();
+									jQuery('#story_ids').html('All set :)');		
+						
+									jQuery('#pos_planet_mess').html('Sit back, relax, stay indoors, </br> and enjoy your story');	
+									jQuery('#checkuser_details').hide();
+									jQuery('#pos_planet_mess').fadeIn(1000);
+									//jQuery('#footer1').show();
+									jQuery('#c1').attr('src',"img/chart/degree/"+data+".jpg");
+									jQuery('#chart').show();
+									jQuery("#loading_map").hide();
+									setTimeout(function(){ 
+
+
+
+									jQuery('#chartpress').trigger('click');
+
+
+
+									 }, 2000);
+									
+									rendertabledetails();
+									tablefordetails();
+									rendernakclass();
+									//c1_d9_creation_auto();	
+									//c1_d10_creation_auto();	
+									//c1_d2_creation_auto();
+									//c1_d3_creation_auto();
+									//c1_d4_creation_auto();
+									//c1_d7_creation_auto();
+									//c1_d12_creation_auto();
+									//c1_d16_creation_auto();
+									//c1_d20_creation_auto();
+									//c1_d24_creation_auto();
+									//c1_d27_creation_auto();
+									//c1_d30_creation_auto();
+									//c1_d40_creation_auto();
+									//c1_d45_creation_auto();
+									//c1_d60_creation_auto();
+									
+									needfullst();
+									jQuery('#question_class').show();
+									setTimeout(function(){ 
+
+
+
+									storiesRender();
+									dasharender();
+
+
+									 }, 3000);
+
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+
+	});
+});
+function c1_d9_creation_auto()
+{
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d9.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d9').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d9_btn").hide();
+										jQuery("#d9_genrate").show();
+										jQuery("#loading_map").hide();
+										
+										
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function c1_d10_creation_auto()
+{
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d10.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d10').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d10_btn").hide();
+										jQuery("#d10_genrate").show();
+										jQuery("#loading_map").hide();
+										
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+			
+function c1_d2_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d2_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d2').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d2_btn").hide();
+										jQuery("#d2_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+function c1_d3_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d3_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d3').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d3_btn").hide();
+										jQuery("#d3_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+function c1_d4_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d4_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d4').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d4_btn").hide();
+										jQuery("#d4_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+function c1_d7_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d7_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d7').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d7_btn").hide();
+										jQuery("#d7_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function c1_d12_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d12_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d12').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d12_btn").hide();
+										jQuery("#d12_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function c1_d16_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d16_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d16').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d16_btn").hide();
+										jQuery("#d16_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function c1_d20_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d20_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d20').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d20_btn").hide();
+										jQuery("#d20_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+function c1_d24_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d24_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d24').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d24_btn").hide();
+										jQuery("#d24_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function c1_d27_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d27_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d27').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d27_btn").hide();
+										jQuery("#d27_genrate").show();
+										jQuery("#loading_map").hide();
+										
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+function c1_d30_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d30_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d30').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d30_btn").hide();
+										jQuery("#d30_genrate").show();
+										jQuery("#loading_map").hide();
+										
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+function c1_d40_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d40_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d40').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d40_btn").hide();
+										jQuery("#d40_genrate").show();
+										jQuery("#loading_map").hide();
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function c1_d45_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d45_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d45').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d45_btn").hide();
+										jQuery("#d45_genrate").show();
+										jQuery("#loading_map").hide();
+										
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function c1_d60_creation_auto()
+{
+	jQuery("#loading_map").show();
+	jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/savecus_auto_d60_2020.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#autorun').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+										//alert(data);
+										jQuery('#c_d60').attr('src',"img/chart/"+data+".jpg");
+										jQuery("#chart_genrate_d60_btn").hide();
+										jQuery("#d60_genrate").show();
+										jQuery("#loading_map").hide();
+										
+
+								},
+
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+								});
+}
+
+function login_direct()
+			{
+			jQuery('#error_log').hide();
+				if(document.getElementById('usermaillogin').value == '')
+					{
+						jQuery('#error_log').html('enter email address.');
+						jQuery('#error_log').fadeIn(1000);
+						return false;
+					}
+				else if(document.getElementById('passuserl').value == '')
+					{
+								jQuery('#error_log').html('enter password.');
+						jQuery('#error_log').fadeIn(1000);
+					return false;
+					}
+					else{
+					        
+							jQuery('#new_link').hide();
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/userloginAuth_direct.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#loginUser').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+											if(data == 'yes')
+												{
+													
+											jQuery.ajax({
+
+												url: 'https://www.farfaraway.co/header.php',
+
+												dataType: 'text',
+
+												contentType: 'application/x-www-form-urlencoded',
+
+												success: function( data, textStatus, jQxhr ){
+													jQuery('#whole_div').html(data);
+													jQuery('#existing-member-inner').hide();
+													startprocess();
+													
+											},
+
+												error: function( jqXhr, textStatus, errorThrown ){   
+
+												}
+
+											});
+													
+													
+												}
+											else if(data == 'not1')
+												{
+													jQuery('#error_log').html('The email is not registered, please click the new user section below.');
+													jQuery('#error_log').fadeIn(1000);
+													jQuery('#new_link').fadeIn(1000);
+												}
+												else
+												{
+													jQuery('#error_log').html('Please check your password');
+													jQuery('#error_log').fadeIn(1000);
+												}
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+						});
+				}
+			}
+function resUser()
+		{
+			var numbers = /^[0-9]+$/;
+			jQuery('#error_reg').hide();
+			var usermail_r = document.getElementById('usermail_r').value;
+			var pass = document.getElementById('password').value;
+			var c_pass = document.getElementById('c_password').value;
+			if(!pass.match(numbers) || pass == '')
+				{
+				jQuery('#error_reg').html('please enter a 4 digit code.');
+				
+				jQuery('#error_reg').fadeIn(1000);
+				document.getElementById('password').focus();
+				return false;
+				}
+			else if(usermail_r == '')
+				{
+				jQuery('#error_reg').html('please enter username.');
+				
+				jQuery('#error_reg').fadeIn(1000);
+				document.getElementById('usermail_r').focus();
+				return false;
+				}
+			else if(!c_pass.match(numbers) || c_pass == '')
+				{
+				jQuery('#error_reg').html('please enter a 4 digit code.');
+
+				jQuery('#error_reg').fadeIn(1000);
+								document.getElementById('c_password').focus();
+				return false;
+						
+				}
+			else if(pass != c_pass)
+				{
+				
+				jQuery('#error_reg').html('password don’t match.');
+				jQuery('#error_reg').fadeIn(1000);
+								document.getElementById('c_password').focus();
+				return false;
+
+				}
+			else
+			{
+				jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/userpost.php',
+
+									dataType: 'text',
+
+									type: 'post',
+
+									contentType: 'application/x-www-form-urlencoded',
+
+									data: jQuery('#resgisterUser').serialize(),
+
+									success: function( data, textStatus, jQxhr ){
+									  if(data == 'save'){
+																			
+											jQuery.ajax({
+
+												url: 'https://www.farfaraway.co/header.php',
+
+												dataType: 'text',
+
+												contentType: 'application/x-www-form-urlencoded',
+
+												success: function( data, textStatus, jQxhr ){
+													jQuery('#whole_div').html(data);
+													jQuery('#new-member-inner').hide();
+													startprocess();
+													
+											},
+
+												error: function( jqXhr, textStatus, errorThrown ){   
+
+												}
+
+											});
+													
+										}
+										if(data == 'not'){
+																	
+											jQuery('#error_reg').html('Your email is already registered,<br/>please click forgot password.');
+											jQuery('#error_reg').fadeIn(1000);
+											jQuery('.forget_linkre').fadeIn(1000);
+										}
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+						});
+		}
+		}
+function forget_direct()
+	{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/forgot_pass_direct.php?email='+jQuery('#usermaillogin').val(),
+									dataType: 'text',
+									contentType: 'application/x-www-form-urlencoded',
+									success: function( data, textStatus, jQxhr ){
+									 if(data == 'yes')
+										{
+											jQuery('#mess_l_1').hide();
+											jQuery('#mess_l_3').html('Password has been sent to your email');
+											jQuery('#mess_l_3').fadeIn(1000);								
+										}
+											
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+						});
+		
+	}
+function forget_direct1()
+	{
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/forgot_pass_direct.php?email='+jQuery('#email').val(),
+									dataType: 'text',
+									contentType: 'application/x-www-form-urlencoded',
+									success: function( data, textStatus, jQxhr ){
+											
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+						});
+		
+	}
+
+	function checkforit()
+		{
+			if(document.getElementById('save_info').checked)
+				{
+					jQuery('#okauto').fadeIn(1000);
+				}
+			else
+				{
+					jQuery('#okauto').hide();
+				}
+		}
+function prevSlide(){
+	var slideIndex = document.getElementById('slide_n').value;
+	if(slideIndex > 1){
+	var slideIndex1 = parseInt(slideIndex)-parseInt(1);
+	
+	if(slideIndex1 == 4){
+		
+			jQuery('#listed_city1').html('<div class="listed_city" id="listed_city" style="display:none;"></div>');
+		checkcityAPI();
+		}
+	if(slideIndex1 == 3)
+		{
+		jQuery('#listed_city').remove();
+		}
+	 var pL = document.getElementById('next_meter').value;
+
+		var leftM = parseInt(pL) - parseInt(20);
+		document.getElementById('next_meter').value = leftM;
+	jQuery( "#fifth_line" ).animate({
+			paddingLeft:leftM+'%'
+		  }, 1000, function() {
+			// Animation complete.
+		  });	
+		
+	if(slideIndex1 == 1){
+	jQuery('#prev-slide').hide();
+	}
+	jQuery('#next-slide').fadeIn(1000);
+	document.getElementById('slide_n').value = slideIndex1;
+	jQuery('#slide'+slideIndex).hide();
+	jQuery('#slide'+slideIndex1).fadeIn(1000);
+	}
+}
+function nextSlide()
+{
+	var slideIndex = document.getElementById('slide_n').value;
+	jQuery('#prev-slide').fadeIn(1000);
+	if(validateform(slideIndex)){
+			var slideIndex1 = parseInt(slideIndex)+parseInt(1);
+		var leftM = parseInt(20)*parseInt(slideIndex);
+
+	if(slideIndex < 5){
+		var slideIndex1 = parseInt(slideIndex)+parseInt(1);
+		var leftM = parseInt(20)*parseInt(slideIndex);
+		document.getElementById('next_meter').value = leftM;
+		 jQuery( "#fifth_line" ).animate({
+			paddingLeft:leftM+'%'
+		  }, 1000, function() {
+			// Animation complete.
+		  });	
+		
+		if(slideIndex1 == 4){
+			
+				jQuery('#listed_city1').html('<div class="listed_city" id="listed_city" style="display:none;"></div>');
+	checkcityAPI();
+			jQuery('#next-slide').hide();
+		}
+		else
+		{
+			
+			jQuery( "#fifth_line" ).animate({
+			paddingLeft:leftM+'%'
+		  }, 1000, function() {
+			// Animation complete.
+		  });	
+			jQuery('#next-slide').fadeIn(1000);
+		}
+	document.getElementById('slide_n').value = slideIndex1;
+	jQuery('#slide'+slideIndex).hide();
+	if(slideIndex1 == 2)
+				{
+					jQuery('#slide'+slideIndex1).show();
+				}
+	else	
+				{
+					jQuery('#slide'+slideIndex1).fadeIn(1000);
+				}
+	if(slideIndex1 == 2)
+				{
+				
+				  document.getElementById('dob_yyyy').focus();
+				}
+			else if(slideIndex1 == 3)
+				{
+				  
+				  document.getElementById('time_birth_hr').focus();
+				}
+			else if(slideIndex1 == 4)
+				{
+				 document.getElementById('place_dob').focus();
+				}
+			else if(slideIndex1 == 5)
+				{
+				 document.getElementById('email').focus();
+				}
+		
+	}
+	else
+	{
+							jQuery( "#fifth_line" ).animate({
+								paddingLeft:'90%'
+							  }, 1000, function() {
+								// Animation complete.
+							  });
+						setTimeout(function(){ 
+							jQuery('#theForm').hide();
+							jQuery('#pos_planet_mess').hide();
+							jQuery('#story_ids').hide();			 
+							startp();
+						 }, 1000);
+	 
+	}
+}
+}
+
+jQuery(document).ready(function(){
+var wage = document.getElementById("customer_name");
+wage.addEventListener("keydown", function (e) {
+
+    if (e.keyCode === 13) {
+		
+       nextSlide();
+    }
+});
+var wage = document.getElementById("dob_dd");
+wage.addEventListener("keydown", function (e) {
+
+    if (e.keyCode === 13) {
+       nextSlide();
+    }
+});
+
+var wage = document.getElementById("time_birth_min");
+wage.addEventListener("keydown", function (e) {
+
+    if (e.keyCode === 13) {
+       nextSlide();
+    }
+});
+
+
+var wage = document.getElementById("email");
+wage.addEventListener("keydown", function (e) {
+
+    if (e.keyCode === 13) {
+       nextSlide();
+    }
+});
+
+});
+function validateform(index)
+	{
+	
+		if(index == 1)
+			{
+				if(document.getElementById('customer_name').value == '')
+					{
+						document.getElementById('customer_name').focus();
+						jQuery('#error-msg-'+index).html("*please enter your name");
+						jQuery('#error-msg-'+index).fadeIn(1000);
+						return false;
+					}
+				else
+					{
+						return true;
+					}
+			}
+		else if(index == 2)
+			{
+					var dob_yyyy = document.getElementById('dob_yyyy');	
+					var dob_mm = document.getElementById('dob_mm');	
+					var dob_dd = document.getElementById('dob_dd');
+					if(!allnumeric(dob_yyyy))
+						{
+							dob_yyyy.focus();
+							jQuery("#error-msg-"+index).html("*please enter date in numbers");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!checkyear(dob_yyyy.value))
+						{
+							dob_yyyy.focus();
+							jQuery("#error-msg-"+index).html("*please enter valid year");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!allnumeric(dob_mm))
+						{
+							dob_mm.focus();
+							jQuery("#error-msg-"+index).html("*please enter date in numbers");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!checkmonth(dob_mm.value))
+						{
+							dob_mm.focus();
+							jQuery("#error-msg-"+index).html("*please enter valid month");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!allnumeric(dob_dd))
+						{
+							dob_dd.focus();
+							jQuery("#error-msg-"+index).html("*please enter date in numbers");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!checkdate(dob_dd.value))
+						{
+							dob_dd.focus();
+							jQuery("#error-msg-"+index).html("*please enter valid date");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+
+						}
+					else
+						{
+						 if(jQuery("#dob_yyyy").val().length <4)
+							{
+
+								jQuery("#error-msg-"+index).html("*please check the date of birth again");
+								jQuery("#error-msg-"+index).fadeIn(1000);
+								return false;
+							}
+							else{
+							return true;
+							}
+						}
+							
+			}
+		else if(index == 3)
+			{
+					var time_birth_hr = document.getElementById('time_birth_hr');	
+					var time_birth_min = document.getElementById('time_birth_min');	
+					
+					if(!allnumeric(time_birth_hr))
+						{
+							time_birth_hr.focus();
+							jQuery("#error-msg-"+index).html("*please check your time of birth");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else if(!allnumeric(time_birth_min))
+						{
+							time_birth_min.focus();
+							jQuery("#error-msg-"+index).html("*please check your time of birth");
+							jQuery("#error-msg-"+index).fadeIn(1000);
+							return false;
+						}
+					else
+						{
+						 if(jQuery("#time_birth_hr").val() < 0 || jQuery("#time_birth_hr").val() > 23 )
+							{
+								time_birth_hr.focus();
+								jQuery("#error-msg-"+index).html("*please check your time of birth");
+								jQuery("#error-msg-"+index).fadeIn(1000);
+								return false;
+							}
+						 if(jQuery("#time_birth_min").val() < 0 || jQuery("#time_birth_min").val() > 59 )
+							{
+								time_birth_min.focus();
+								jQuery("#error-msg-"+index).html("*please check your time of birth");
+								jQuery("#error-msg-"+index).fadeIn(1000);
+								return false;
+							}
+
+							else{
+							return true;
+							}
+						}
+							
+			}	
+		else if(index == 5)
+			{
+				var emaill1 = document.getElementById('email').value;
+				var emaill2 = emaill1.toLowerCase();
+				
+				var emaill = emaill2.replace(/\s/g,'');
+				document.getElementById('email').value = emaill;
+				if(emaill.includes("@") && emaill.includes("."))
+					{
+						return true;
+					}
+				else
+					{
+						document.getElementById('email').focus();
+						jQuery("#error-msg-"+index).html("*please enter a valid email id");
+						jQuery("#error-msg-"+index).fadeIn(1000);
+						return false;
+					}
+			}
+			else
+			{
+			    return true;
+			}
+	}
+    function allnumeric(inputtxt)  
+       {  
+          var numbers = /^[0-9]+$/;  
+          if(inputtxt.value.match(numbers))  
+          {  
+          return true;  
+          }  
+          else  
+          {  
+          return false;  
+          }  
+       }
+	function checkyear(year)
+		{
+			if(year < 1800 || year > 2020)
+				{
+					return false;
+				}
+			else
+				{
+					return true;
+				}
+		}
+	function checkmonth(month)
+		{
+		
+			if(month <1 || month > 12)
+				{
+				
+					return false;
+				}
+			else
+				{
+				  return true;
+				}
+		}
+	function checkdate(date)
+		{
+				if(date <1 || date >31)
+					{
+					  return false;
+					}
+				else
+					{
+					  return true;
+					}
+		}
+	function sociallinks()
+		{
+				var chartd = document.getElementById('chartd').value;
+							jQuery.ajax({
+
+									url: 'https://www.farfaraway.co/social_setting.php?chart_id='+chartd,
+									dataType: 'text',
+									contentType: 'application/x-www-form-urlencoded',
+									success: function( data, textStatus, jQxhr ){
+									
+									
+						
+									},
+									error: function( jqXhr, textStatus, errorThrown ){   
+
+									}
+
+							});
+		}
+		
+		
+		//right-click
+		/*
+		jQuery(document).ready(function(){
+		jQuery(document).bind("contextmenu",function(e) {
+		 e.preventDefault();
+		});
+		jQuery(document).keydown(function(e){
+			if(e.which === 123){
+			   return false;
+			}
+		});
+		});*/
+		
+		
+</script>
+
+
+<div class="loading_map" style="display:none" id="loading_map"> </div>
+<input type="hidden" name="next_meter" id="next_meter" value="0"/>
+<input type="hidden" name="chartd" id="chartd"/>
+<div  style="position:relative;display:none;" id="load_v">
+<div style="position: fixed;
+width: 100%; height: 100%; transform: scale(0.2); 
+fixed; background-color: none;
+top: 31%;
+left: 3.6%;
+z-index: 10000000;
+opacity: .8; background-repeat: no-repeat; background-position: center;">
+<img src="https://www.farfaraway.co/img/loader3.gif" border="0"/>
+</div>
+</div>
